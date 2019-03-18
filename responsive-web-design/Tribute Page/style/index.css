@@ -26,10 +26,12 @@ figure {
   display: grid;
   justify-content: center;
 }
+
 #image {
-  display: grid;
-  justify-content: center;
-  width: 100%;
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
 }
 
 main {
