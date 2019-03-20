@@ -6,6 +6,7 @@
   <title>Survey Form</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="./style/index.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
@@ -24,16 +25,123 @@
   <main>
     <section>
       <h1 id="title">Survey Form</h1>
-      <form id="survey-form">
+      <p id="description">Do you often work with contracts?</p>
 
+      <form id="survey-form" action="#" method="post" autocomplete="off" name="survey">
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <div>
+            <label id="name-label" for="name">
+              Name <em>*</em>
+            </label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required>
+          </div>
+
+          <div>
+            <label id="email-label" name="name" for="email">
+              E-mail <em>*</em>
+            </label>
+            <input type="email" id="email" placeholder="yourmail@yourdomain.com" required>
+          </div>
+
+          <div>
+            <label id="number-label" for="number">
+              You work with contracts (per day) <em>*</em>
+            </label>
+            <input type="number" id="number" placeholder="Number of times" min="0" max="10000" step="1" required>
+          </div>
+
+          <div>
+            <label id="dropdown-label" for="dropdown">
+              You role
+            </label>
+            <select id="dropdown" required>
+              <option disabled value>Select an option</option>
+              <option value="lawyer">lawyer</option>
+              <option value="manager">manager</option>
+              <option value="owner">owner</option>
+              <option value="student">student</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="expirience-radio-but">
+              Your expirience (years)
+            </label>
+              <ul>
+                <li>
+                  <label>
+                    <input class="expirience-radio-but" name="radio-buttons" value="<1" type="radio" checked>
+                    <span>0-1</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="expirience-radio-but" name="radio-buttons" value="1 || 2" type="radio">
+                    <span>1-2</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="expirience-radio-but" name="radio-buttons" value="2 || 4" type="radio">
+                    <span>2-4</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="expirience-radio-but" name="radio-buttons" value="5>" type="radio">
+                    <span>5+</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input class="expirience-radio-but" name="radio-buttons" value="10>" type="radio">
+                    <span>10+</span>
+                  </label>
+                </li>
+              </ul>
+          </div>
+
+          <div>
+            <label for="">You often work with</label>
+            <ul >
+              <li>
+                <input name="features-checkboxes" type="checkbox" value="sales">
+                <label for="features-checkboxes">Sales contracts</label>
+              </li>
+              <li>
+                <input name="features-checkboxes" type="checkbox" value="service">
+                <label for="features-checkboxes">Service contracts</label>
+              </li>
+              <li>
+                <input name="features-checkboxes" type="checkbox" value="nda">
+                <label for="features-checkboxes">NDA</label>
+              </li>
+              <li>
+                <input name="features-checkboxes" type="checkbox" value="other">
+                <label for="features-checkboxes">Other</label>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <label for="comments">Any Comments or Suggestions?</label>
+            <textarea name="comments" rows="6" cols="70" maxlength="500" wrap="soft" placeholder="sss">
+          </textarea>
+          </div>
+
+          <button id="submit">Submit</button>
+        </fieldset>
       </form>
     </section>
   </main>
 
   <footer>
     <p id="footer-text-item">&copy; 2019, <a href="https://github.com/dimapositiva">Soloviov Dmytro</a>
-        </p>
-      </footer>
+    </p>
+  </footer>
 </body>
 
 </html>
