@@ -44,3 +44,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
+ul {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
