@@ -25,39 +25,41 @@
   <main>
     <section id="main-section">
       <h1 id="title">Survey Form</h1>
-      <p id="description">Do you often work with contracts?</p>
+      <p id="description">Do you work with contracts often?</p>
     </section>
 
     <section id="form-section">
       <form id="survey-form" action="#" method="post" autocomplete="off" name="survey">
 
         <fieldset>
-          <legend><p>Your Information</p></legend>
+          <legend>
+            <p>Your Information</p>
+          </legend>
 
           <div class="form-item-container">
             <label class="left-item" id="name-label" for="name">
-              Name <em>*</em>
+              <span class="left-item-text">Your name</span> <em>*</em>
             </label>
             <input type="text" name="name" id="name" placeholder="John Doe" required>
           </div>
 
           <div class="form-item-container">
             <label class="left-item" id="email-label" name="name" for="email">
-              E-mail <em>*</em>
+              <span class="left-item-text">E-mail</span> <em>*</em>
             </label>
             <input type="email" id="email" placeholder="yourmail@yourdomain.com" required>
           </div>
 
           <div class="form-item-container">
             <label class="left-item" id="number-label" for="number">
-              You work with contracts (per day) <em>*</em>
+              <span class="left-item-text">You work with contracts (per day)</span> <em>*</em>
             </label>
             <input type="number" id="number" placeholder="Number of times" min="0" max="10000" step="1" required>
           </div>
 
           <div class="form-item-container">
             <label class="left-item" id="dropdown-label" for="dropdown">
-              You role
+              <span class="left-item-text">You role</span>
             </label>
             <select id="dropdown" required>
               <option disabled value>Select an option</option>
@@ -70,7 +72,7 @@
 
           <div class="form-item-container">
             <label class="left-item" for="expirience-radio-but">
-              Your expirience (years)
+              <span class="left-item-text">Your expirience (years)</span>
             </label>
             <ul>
               <li>
@@ -107,7 +109,8 @@
           </div>
 
           <div class="form-item-container">
-            <label class="left-item" for="checkbox-list">You often work with</label>
+            <label class="left-item" for="checkbox-list">
+              <span class="left-item-text">You often work with</span></label>
             <ul id="checkbox-list">
               <li class="checkbox-list-item">
                 <input name="features-checkboxes" type="checkbox" value="sales">
@@ -129,18 +132,22 @@
           </div>
 
           <div class="form-item-container">
-            <label class="left-item" for="comments">Do you have any comments or suggestions?</label>
+            <label class="left-item" for="comments">
+              <span class="left-item-text" id="suggestions">
+                Do you have any comments or suggestions?
+              </span>
+            </label>
             <textarea name="comments" rows="6" cols="70" maxlength="500" wrap="soft" placeholder="sss">
           </textarea>
           </div>
 
           <div class="form-button-container">
             <button id="submit">
-            <span id="submit-button">
-              submit
-            </span>
-          </button>
-        </div>
+              <span id="submit-button">
+                submit
+              </span>
+            </button>
+          </div>
 
         </fieldset>
       </form>
