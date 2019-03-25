@@ -62,6 +62,7 @@ div.form-item-container {
 
 div.form-button-container {
   display: grid;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -69,8 +70,18 @@ div.form-button-container {
 
 .left-item {
   display: grid;
+  grid-template-columns: 98% 2%;
   justify-content: end;
   margin-right: 10px;
+}
+
+.left-item-text {
+  display: grid;
+  justify-content: end;
+}
+
+#suggestions {
+  margin-right: 1em;
 }
 
 a {
@@ -110,6 +121,24 @@ button:hover {
 
 label, span {
   color: #fff;
+}
+
+input {
+  border: none;
+  border-radius: 5em;
+  align-content: center;
+  align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#dropdown {
+  height: 2.8em;
+  width: 12.5em;
+  padding-left: 1em;
+  padding-right: : 1em;
+  border-radius: 5em;
+  border: none;
 }
 
 footer {
