@@ -1,1 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
 
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+@media (min-width: 720px) {
+  #header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  main {
+    position: inherit;
+    margin-top: 5em;
+  }
+
+  #header-img {
+    margin-left: 3em;
+    height: 7em;
+  }
+
+  #nav-bar-list {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    justify-content: end;
+    grid-gap: 20px;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-link:hover {
+    color: #0000ff;
+  }
+
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer {
+    background-color: #4d4dff;
+    color: #fff;
+  }
+}
