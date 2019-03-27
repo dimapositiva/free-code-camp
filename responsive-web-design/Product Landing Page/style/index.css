@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei');
-* {
-    margin: 0;
-}
-
 body {
     font-family: 'ZCOOL XiaoWei', serif;
+    color: #9524e0;
 }
 
 @media (min-width: 720px) {
@@ -21,7 +18,7 @@ body {
     }
     main {
         position: inherit;
-        margin-top: 5em;
+        margin-top: 10em;
     }
     #header-img {
         margin-left: 3em;
@@ -51,7 +48,35 @@ body {
         font-size: 110%;
     }
     .main-form {
-        height: 20em;
+        display: grid;
+        justify-content: center;
+    }
+    #form {
+        display: grid;
+        justify-content: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    #email {
+        width: 20em;
+        height: 2.5em;
+        border-radius: 5em;
+        border: none;
+        background-color: #4d4dff86;
+        s
+    }
+    #submit {
+        margin-top: 1em;
+        width: 8em;
+        height: 2.5em;
+        border-radius: 5em;
+        border: none;
+        background-image: linear-gradient(#4d4dff, #9524e0);
+        color: #fff;
+    }
+    #submit:hover {
+        background-image: linear-gradient(#2121c0, #4f0c7c);
     }
     #pricing {
         margin-top: 60px;
