@@ -3,58 +3,83 @@
 <html>
 
 <head>
-    <title>Product Landing Page</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="./style/index.css">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <title>Product Landing Page</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./style/index.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
 
 <body>
-    <header id="header">
-        <a class="header-link" href="index.html">
-            <img id="header-img" src="./img/logo.png" alt="logo image">
-        </a>
-        <nav id="nav-bar">
-            <ul id="nav-bar-list">
-                <li><a class="nav-link" href="#features">features</a></li>
-                <li><a class="nav-link" href="#how-it-works">how it works</a></li>
-                <li><a class="nav-link" href="#pricing">pricing</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header id="header">
+    <a class="header-link" href="index.html">
+      <img id="header-img" src="./img/logo.png" alt="logo image">
+    </a>
+    <nav id="nav-bar">
+      <ul id="nav-bar-list">
+        <li><a class="nav-link" href="#features">features</a></li>
+        <li><a class="nav-link" href="#how-it-works">how it works</a></li>
+        <li><a class="nav-link" href="#pricing">pricing</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="main-form">
-            <h2>create something cool</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input name="email" id="email" type="email" placeholder="Enter your email address" required />
-                <input id="submit" type="submit" value="create!" class="btn" />
-            </form>
-        </section>
+  <main>
+    <section class="main-form">
+      <h2>let's meet</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+        <input id="submit" type="submit" value="meet!" class="btn" />
+      </form>
+    </section>
 
-        <section id="features">
-            <h2>Features</h2>
-        </section>
+    <section id="features">
+      <h2>Features</h2>
+      <div id="features-container">
+        <div class="features-container-item">
+          <h3 class="features-container-title">Title1</h3>
+          <p class="features-container-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id lacus ligula. Integer porta id turpis sed congue. Nullam eros massa, fermentum vel sollicitudin lobortis, ultricies id lacus. Phasellus volutpat tellus augue, varius venenatis urna aliquet id. Nam aliquet accumsan ipsum sit amet commodo. In et justo eleifend, pretium eros nec, aliquet odio. Nam sollicitudin sagittis enim vitae imperdiet. Nulla euismod posuere tincidunt. Etiam imperdiet felis sed lorem auctor, nec aliquam ex consequat. Phasellus tempus ligula eget consequat consectetur. Sed porta accumsan urna id sagittis. Nullam eu sapien rhoncus, molestie tortor eu, luctus purus. Phasellus commodo massa vitae mi pellentesque, eget interdum nulla mollis. Ut non erat eu lectus consectetur aliquam ut tempus lorem. Nullam fringilla sit amet felis non pulvinar. </p>
+        </div>
+        <div class="features-container-item">
+          <h3 class="features-container-title">Title2</h3>
+          <p class="features-container-text">Nulla ac ligula ac nisl aliquet aliquam at quis felis. Quisque mattis tortor sit amet libero aliquam, eu sagittis ipsum pellentesque. Mauris molestie hendrerit tellus, eu sollicitudin tellus efficitur non. Sed tincidunt, risus vitae elementum varius, lorem felis vulputate elit, non maximus arcu tellus non lorem. Cras in dolor sed arcu blandit tempus at ac leo. Etiam quis elit nibh. In a volutpat sem, vel posuere lorem. Vivamus feugiat tellus et ex dignissim malesuada. Quisque maximus lacinia neque ut blandit. Vestibulum ex mi, ullamcorper sed dignissim eget, egestas a arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam in dolor a eros rhoncus imperdiet. </p>
+        </div>
+        <div class="features-container-item">
+          <h3 class="features-container-title">Title3</h3>
+          <p class="features-container-text">Maecenas ac enim justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent at mi ac urna accumsan convallis sit amet ut enim. Suspendisse quis enim feugiat, pretium turpis ac, malesuada magna. Suspendisse tellus lacus, gravida sed sollicitudin in, facilisis ut justo. Vivamus maximus rhoncus ipsum et tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ullamcorper eleifend aliquam. Sed nec volutpat augue. Sed dapibus tortor vel lectus dignissim, nec gravida velit volutpat. Nulla facilisi. </p>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </section>
+    <section id="how-it-works">
+      <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </section>
 
-        <section id="how-it-works"></section>
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div id="pricing-container">
+        <div class="pricing-container-item">
+          <h3 class="pricing-container-title">Free</h3>
+          <p class="pricing-container-text">Lorem ipsum</p>
+        </div>
+        <div class="pricing-container-item">
+          <h3 class="pricing-container-title">Premium</h3>
+          <p class="pricing-container-text">Lorem ipsum</p>
+        </div>
+      </div>
 
-        <section id="pricing"></section>
+    </section>
 
-    </main>
+  </main>
 
-    <footer>
-        <nav id="footer-nav-bar">
-            <ul class="footer-nav-bar-list">
-                <li class="footer-nav-bar-item">privacy</li>
-                <li class="footer-nav-bar-item">terms of service</li>
-                <li class="footer-nav-bar-item">cotacts</li>
-            </ul>
-        </nav>
-    </footer>
+  <footer>
+    <nav id="footer-nav-bar">
+      <ul class="footer-nav-bar-list">
+        <li class="footer-nav-bar-item">privacy</li>
+        <li class="footer-nav-bar-item">terms of service</li>
+        <li class="footer-nav-bar-item">cotacts</li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 
 </html>
