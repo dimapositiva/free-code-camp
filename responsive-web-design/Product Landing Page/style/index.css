@@ -81,6 +81,7 @@ body {
   }
 
   #submit {
+    margin: auto;
     margin-top: 1em;
     width: 8em;
     height: 2.5em;
@@ -98,42 +99,46 @@ body {
     display: grid;
     justify-content: center;
   }
-#features-container {
-  display: grid;
-  grid-template-columns: repeat(3, 20em);
-  justify-content: center;
-  grid-gap: 30px;
-}
 
-.features-container-item {
-  display: grid;
-  /* justify-content: center; */
-  background-color:#b380ff;
-  border-radius: 5px;
-  color: #fff;
-  font-family: 'Roboto Slab', serif;
-}
+  #features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 20em);
+    justify-content: center;
+    grid-gap: 30px;
+  }
 
-.features-container-title {
-  text-align: center;
-}
+  .features-container-item {
+    display: grid;
+    justify-content: center;
+    background-color: #b380ff;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+  }
 
-.features-container-text {
-  margin: 1em;
-display: grid;
-align-content: flex-start;
-}
+  .features-container-title {
+    text-align: center;
+  }
 
-#how-it-works {
-  display: grid;
-  justify-content: center;
-  margin-top: 5em;
-}
+  .features-container-text {
+    margin: 1em;
+    display: grid;
+    align-content: flex-start;
+  }
 
-#video {
-  width: 50em;
-  height: 35em;
-}
+  #how-it-works {
+    display: grid;
+    justify-content: center;
+    margin-top: 5em;
+    background-color: #b380ff;
+  }
+
+  #video {
+    width: 50em;
+    height: 35em;
+    padding: 5em;
+  }
+
   #pricing {
     margin-top: 60px;
     display: flex;
@@ -151,14 +156,51 @@ align-content: flex-start;
   .pricing-container-item {
     display: grid;
     justify-content: center;
-    background-color:#b380ff;
+    background-color: #b380ff;
     border-radius: 5px;
     color: #fff;
     font-family: 'Roboto Slab', serif;
   }
 
+  .pricing-container-title {
+    text-align: center;
+  }
+
+  .pricing-container-text {
+    margin: 1.5em;
+  }
+
   footer {
+    margin-top: 3em;
+    display: grid;
+    justify-content: center;
     background-color: #4d4dff;
     color: #fff;
+  }
+
+  #footer-nav-bar-list {
+    margin-top: 2em;
+    height: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(3, 8em);
+    justify-content: end;
+    text-align: center;
+  }
+
+  #footer-text-item {
+    text-align: center;
+    height: 1.5em;
+  }
+
+  #footer-link-text {
+    color: #fff;
+  }
+
+  .footer-link {
+    color: #fff;
+  }
+
+  .footer-link:hover {
+    font-size: 110%;
   }
 }
