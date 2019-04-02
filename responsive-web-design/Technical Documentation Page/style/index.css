@@ -5,9 +5,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-li {
+/* li {
   list-style: none;
-}
+} */
 
 table, thead, tbody, th, td, tr {
   border: dotted 1px;
