@@ -316,21 +316,35 @@
               </ul>
             </td>
             <td>
-              <ul>
-                <li>item 1</li>
-                <li>definition 1</li>
-                <li>item 2</li>
-                <li>definition 2-1</li>
-                <li>definition 2-2</li>
-              </ul>
+              <dl>
+                <dt>item 1</dt>
+                <dd>definition 1</dd>
+                <dt>item 2</dt>
+                <dd>definition 2-1</dd>
+                <dd>definition 2-2</dd>
+              </dl>
             </td>
           </tr>
           <tr>
             <td>Indent text</td>
-            <td>: Single indent :: Double indent ::::: Multiple indent This workaround may harm accessibility.
+            <td>
+              <ul>
+                <li>: Single indent</li>
+                <li>:: Double indent</li>
+                <li>::::: Multiple indent</li>
+              </ul>
+              <p>This workaround may harm accessibility.</p>
             </td>
             <td>
-              Single indent Double indent Multiple indent
+              <ul>
+                <li>Single indent</li>
+                <ul>
+                  <li>Double indent</li>
+                  <ul>
+                    <li>Multiple indent</li>
+                  </ul>
+                </ul>
+              </ul>
             </td>
           </tr>
           <tr>
@@ -357,7 +371,7 @@
                 <li>### five sub 1 sub 1</li>
                 <li>## five sub 2</li>
               </ul>
-              <p>The usage of #: and *: for breaking a line within an item may also harm accessibility.</p>
+              <p>The usage of <span>#:</span> and <span>*:</span> for breaking a line within an item may also harm accessibility.</p>
             </td>
             <td>
               <ol>
@@ -367,12 +381,11 @@
                   <li>twopoint one </li>
                   <li>two point two</li>
                 </ul>
-                <li>three <ul>
-                    <li>three item one </li>
-                    <ul>
-                      <li>three def one</li>
-                    </ul>
-                  </ul>
+                <li>three
+                  <dl>
+                    <dt>three item one </dt>
+                    <dd>three def one</dd>
+                  </dl>
                 </li>
                 <li>four </li>
                 <ul>
@@ -397,7 +410,10 @@
               Preformatted text
             </td>
             <td>
-              Start each line with a space. Text is '''preformatted''' and ''markups'' '''''can''''' be done. <p>This way of preformatting only applies to section formatting. Character formatting markups are still effective.</p>
+              Start each line with a space. Text is '''preformatted''' and ''markups'' '''''can''''' be done.
+              <p>
+                This way of preformatting only applies to section formatting. Character formatting markups are still effective.
+              </p>
             </td>
             <td>
               Start each line with a space. Text is preformatted and markups can be done.
@@ -457,7 +473,7 @@
                     </ul>
                     <li>else:
                       <ul>
-                        <li>print False &lt; /nowiki &gt;</li>
+                        <li>print False</li>
                       </ul>
                   </ul>
                 </li>
@@ -475,138 +491,520 @@
       <h2>HTML tags</h2>
       <hr />
       <p>Some HTML tags are allowed in MediaWiki, for example &lt; code &gt;, &lt; div &gt;, and &lt; span &gt;. These apply anywhere you insert them.</p>
-            <table>
-              <thead>
-              <tr><td>Description</td>
-              <td>You type</td>
-              <td>You get</td></tr>
-            </thead></table>
-            <tbody>
-              Inserted
-              (Displays as underline in most browsers)
-              &lt; ins &gt; Inserted &lt; /ins &gt;
+      <table>
+        <thead>
+          <tr>
+            <td>Description</td>
+            <td>You type</td>
+            <td>You get</td>
+          </tr>
+        </thead>
 
-              or
-
+        <tbody>
+          <tr>
+            <td>
+              Inserted (Displays as underline in most browsers)
+            </td>
+            <td>
+              &lt; ins &gt; Inserted &lt; /ins &gt; <br />
+              or <br />
               &lt; u &gt; Underline &lt; /u &gt;
-              Inserted
-
-              or
-
-              Underline
-
-              Deleted
-              (Displays as strikethrough in most browsers)
-              &lt; s &gt; Struck out &lt; /s &gt;
-
-              or
-
+            </td>
+            <td>
+              <ins>Inserted</ins> <br />
+              or <br />
+              <u>Underline</u>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Deleted (Displays as strikethrough in most browsers)
+            </td>
+            <td>
+              &lt; s &gt; Struck out &lt; /s &gt; <br />
+              or <br />
               &lt;del&gt; Deleted &lt; /del &gt;
+            </td>
+            <td>
+              <s>Struck out </s> <br />
+              or <br />
+              <del>Deleted</del>
+            </td>
+          </tr>
+          <tr>
+            <td>Fixed width text </td>
+            <td>
+              &lt;code&gt; Source code &lt; /code &gt; <br />
+              or <br />
+              &lt;code>Fixed width text&lt;/code&gt;
+            </td>
+            <td>
+              <code>Source code</code> <br />
+              or <br />
+              <code>Fixed width text</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Blockquotes </td>
+            <td>Text before <br />
+              &lt;blockquote&gt; Blockquote &lt;/blockquote&gt; <br />
+              Text after </td>
+            <td>
+              Text before
+              <blockquote>
+                Blockquote
+              </blockquote>
+              Text after
+            </td>
+          </tr>
+          <tr>
+            <td>Quotes</td>
+            <td>
+              &lt; q &gt; This is a quotation &lt;/q&gt; The q element must not be used in place of quotation marks that do not represent quotes; for example, it is inappropriate to use the q element for marking up sarcastic statements.[1]
+            </td>
+            <td>
+              <q>This is a quotation</q>
+            </td>
+          </tr>
 
-              Struck out
+          <tr>
+            <td> Comment</td>
+            <td>
+              &lt;!-- This is a comment --&gt;
+              Comments are visible only in the edit zone.
+            </td>
+            <td>
+              Comments are visible only in the edit zone. </td>
+          </tr>
 
-              or
+          <tr>
+            <td>Completely preformatted text</td>
+            <td>&lt;pre>Text is '''preformatted''' and
+              ''markups'' '''''cannot''''' be done&lt;/pre&gt;
+              <p>For marking up of preformatted text, check the "Preformatted text" entry at the end of the previous table.</p>
+            </td>
+            <td>
+              Text is '''preformatted''' and ''markups'' '''''cannot''''' be done
+            </td>
+          </tr>
 
-              Deleted
+          <tr>
+            <td>Customized <br />
+              preformatted text </td>
+            <td>&lt; pre style="color: red" &gt; </td>
+            <td>Text is '''preformatted'''
+              with a style and
+              ''markups'' '''''cannot''''' be done
+              &lt; /pre &gt; A CSS style can be named within the style attribute. Text is '''preformatted''' with a style and ''markups'' '''''cannot''''' be done</td>
+          </tr>
+        <tbody>
+      </table>
+      <p>continued:</p>
+      <table>
+        <thead>
+          Description
+          You type
+          You get
+          <thead>
+          <tbody>
+            <tr>
+              <td>
+                <b>Default</b> <br />
+                preformatted text has a CSS attribute (white-space: pre-wrap;) to wrap the text according to available width</td>
+              <td>
+                &lt;pre&gt; <br />
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer. <br />
+                &lt;/pre&gt; </td>
+              <td>
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer. </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Customized</b> <br />
+                preformatted text with disabled text wrapping</td>
+              <td>
+                &lt;pre style="white-space: pre;"&gt; <br />
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer. <br />
+                &lt;/pre&gt;
+              </td>
+              <td>
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
+              </td>
+            </tr>
+        <tbody>
+      </table>
 
-              Fixed width text
-              &lt;code&gt; Source code &lt; /code &gt; or
+      <h2>Inserting symbols</h2>
+      <hr />
+      <p>Symbols and other special characters not available on your keyboard can be inserted in a multitude of ways. <a href="https://www.howtogeek.com/210824/how-to-quickly-type-special-characters-on-any-computer-smartphone-or-tablet/">Many
+          Operating Systems and browsers</a> allow you to insert special characters through a menu option or Operating System panel.
+        Additionally,
+        you can use the WikiEditor or <a href="https://www.mediawiki.org/wiki/VisualEditor/Special_characters">VisualEditor</a> to insert them into the edit screen.</p>
 
-              &lt;code>Fixed width text&lt;/code&gt; Source code or Fixed width text Blockquotes Text before
-              &lt;blockquote&gt; Blockquote &lt;/blockquote&gt;
-              Text after Text before Blockquote Text after Quotes
-              &lt; q &gt; This is a quotation &lt;/q&gt; The q element must not be used in place of quotation marks that do not represent quotes; for example, it is inappropriate to use the q element for marking up sarcastic statements.[1] This is a quotation
-              Comment
-              <!-- This is a comment -->
-              Comments are visible only in the edit zone. Comments are visible only in the edit zone. Completely preformatted text
-              &lt;pre>Text is '''preformatted''' and
-''markups'' '''''cannot''''' be done&lt;/pre&gt; For marking up of preformatted text, check the "Preformatted text" entry at the end of the previous table. Text is '''preformatted''' and ''markups'' '''''cannot''''' be done Customized preformatted
-              text
-              &lt; pre style="color: red" &gt; Text is '''preformatted'''
-with a style and
-''markups'' '''''cannot''''' be done
-&lt; /pre &gt; A CSS style can be named within the style attribute. Text is '''preformatted''' with a style and ''markups'' '''''cannot''''' be done
-<tbody>
-            </table>
-            <p>continued:</p>
+      <p>As a last resort, you can use a special sequence of characters. Those sequences are called HTML entities. For example, the following sequence (entity) <b>&rarr;</b> when inserted will be shown as right arrow HTML symbol → and <b>&ampmdash;</b>
+        when inserted will be shown as an <u>em dash</u> HTML symbol —.</p>
 
-            <table>
-              Description You type You get Default preformatted text has a CSS attribute (white-space: pre-wrap;) to wrap the text according to available width
-              <pre>
-This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
-</pre> This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer. Customized preformatted text with disabled text wrapping
-              <pre style="white-space: pre;">
-This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
-</pre> This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
-            </table>
-            <h2>Inserting symbols</h2>
-            <p>Symbols and other special characters not available on your keyboard can be inserted in a multitude of ways. Many Operating Systems and browsers allow you to insert special characters through a menu option or Operating System panel.
-              Additionally,
-              you can use the WikiEditor or VisualEditor to insert them into the edit screen.</p>
+      <p>Hover over any character to find out the symbol that it produces. Some symbols not available in the current font will appear as empty squares.</p>
 
-            <p>As a last resort, you can use a special sequence of characters. Those sequences are called HTML entities. For example, the following sequence (entity) &rarr; when inserted will be shown as right arrow HTML symbol → and &mdash; when
-              inserted
-              will be shown as an em dash HTML symbol —.</p>
+      <table>
+        <thead>
+          HTML symbol entities
+        </thead>
+        <tbody>
+          <tr>
+            <td> Á </td>
+            <td> á </td>
+            <td> Â </td>
+            <td> â </td>
+            <td> ´ </td>
+            <td> Æ </td>
+            <td> æ </td>
+            <td> À </td>
+            <td> à </td>
+            <td> ℵ </td>
+            <td> Α </td>
+            <td> α </td>
+            <td> & </td>
+            <td> ∧ </td>
+            <td> ∠ </td>
+            <td> Å </td>
+            <td> å </td>
+            <td> &asymp; </td>
+            <td> Ã </td>
+            <td> ã </td>
+            <td> Ä </td>
+            <td> ä </td>
+            <td> „ </td>
+            <td> Β </td>
+            <td> β </td>
+            <td> ¦ </td>
+            <td> • </td>
+            <td> ∩ </td>
+            <td> Ç </td>
+            <td> ç </td>
+            <td> ¸ </td>
+            <td> ¢ </td>
+          </tr>
+          <tr>
+            <td> Χ </td>
+            <td> χ </td>
+            <td> ˆ </td>
+            <td> ♣ </td>
+            <td> ≅ </td>
+            <td> © </td>
+            <td> ↵ </td>
+            <td> ∪ </td>
+            <td> ¤ </td>
+            <td> † </td>
+            <td> ‡ </td>
+            <td> ↓ </td>
+            <td> ⇓ </td>
+            <td> ° </td>
+            <td> Δ </td>
+            <td> δ </td>
+            <td> ♦ </td>
+            <td> ÷ </td>
+            <td> É </td>
+            <td> é </td>
+            <td> Ê </td>
+            <td> ê </td>
+            <td> È </td>
+            <td> è </td>
+            <td> ∅ </td>
+            <td> </td>
+            <td> </td>
+            <td>Ε </td>
+            <td>ε </td>
+            <td> ≡ </td>
+            <td> Η </td>
+            <td> η </td>
+          </tr>
+          <tr>
+            <td> Ð </td>
+            <td> ð </td>
+            <td> Ë </td>
+            <td> ë </td>
+            <td> € </td>
+            <td> ∃ </td>
+            <td> ƒ </td>
+            <td> ∀ </td>
+            <td> ½ </td>
+            <td> ¼ </td>
+            <td> ¾ </td>
+            <td> ⁄ </td>
+            <td> Γ </td>
+            <td> γ </td>
+            <td> ≥ </td>
+            <td> > </td>
+            <td> ↔ </td>
+            <td> ⇔ </td>
+            <td> ♥ </td>
+            <td> … </td>
+            <td> Í </td>
+            <td> í </td>
+            <td> Î </td>
+            <td> î </td>
+            <td> ¡ </td>
+            <td> Ì </td>
+            <td> ì </td>
+            <td> ℑ </td>
+            <td> ∞ </td>
+            <td> ∫ </td>
+            <td> Ι </td>
+            <td> ι </td>
+          </tr>
+          <tr>
+            <td> ¿ </td>
+            <td> ∈ </td>
+            <td> Ï </td>
+            <td> ï </td>
+            <td> Κ </td>
+            <td> κ </td>
+            <td> Λ </td>
+            <td> λ </td>
+            <td> 〈 </td>
+            <td> « </td>
+            <td> ← </td>
+            <td> ⇐ </td>
+            <td> ⌈ </td>
+            <td> “ </td>
+            <td> ≤ </td>
+            <td> ⌊ </td>
+            <td> ∗ </td>
+            <td> ◊ </td>
+            <td>‎ ‹ </td>
+            <td> ‘ <td>
+            <td>
+              < </td> <td> ¯
+            </td>
+            <td> — </td>
+            <td> µ </td>
+            <td> · </td>
+            <td> − </td>
+            <td> Μ </td>
+            <td> μ </td>
+            <td> ∇ </td>
+            <td> – </td>
+            <td> ≠ </td>
+          </tr>
+          <tr>
+            <td> ∋ </td>
+            <td> ¬ </td>
+            <td> ∉ </td>
+            <td> ⊄ </td>
+            <td> Ñ </td>
+            <td> ñ </td>
+            <td> Ν </td>
+            <td> ν </td>
+            <td> Ó </td>
+            <td> ó </td>
+            <td> Ô </td>
+            <td> ô </td>
+            <td> Œ </td>
+            <td> œ </td>
+            <td> Ò </td>
+            <td> ò </td>
+            <td> ‾ </td>
+            <td> Ω </td>
+            <td> ω </td>
+            <td> Ο </td>
+            <td> ο </td>
+            <td> ⊕ </td>
+            <td> ∨ </td>
+            <td> ª </td>
+            <td> º </td>
+            <td> Ø </td>
+            <td> ø </td>
+            <td> Õ </td>
+            <td> õ </td>
+            <td> ⊗ </td>
+            <td> Ö </td>
+          </tr>
+          <tr>
+            <td> ö </td>
+            <td> ¶ </td>
+            <td> ∂ </td>
+            <td> ‰ </td>
+            <td> ⊥ </td>
+            <td> Φ </td>
+            <td> φ </td>
+            <td> Π </td>
+            <td> π </td>
+            <td> ϖ </td>
+            <td> ± </td>
+            <td> £ </td>
+            <td> ′ </td>
+            <td> ″ </td>
+            <td> ∏ </td>
+            <td> ∝ </td>
+            <td> Ψ </td>
+            <td> ψ </td>
+            <td> " </td>
+            <td> √ </td>
+            <td> 〉 </td>
+            <td> » </td>
+            <td> → </td>
+            <td> ⇒ </td>
+            <td> ⌉ </td>
+            <td> ” </td>
+            <td> ℜ </td>
+            <td> ® </td>
+            <td> ⌋ </td>
+            <td> Ρ</td>
+            <td> ρ </td>
+          </tr>
+          <tr>
+            <td> › </td>
+            <td> ’ </td>
+            <td> ‚ </td>
+            <td> Š </td>
+            <td> š </td>
+            <td> ⋅ </td>
+            <td> § </td>
+            <td> Σ </td>
+            <td> σ </td>
+            <td> ς </td>
+            <td> ∼ </td>
+            <td> ♠ </td>
+            <td> ⊂ </td>
+            <td> ⊆ </td>
+            <td> ∑ </td>
+            <td> ⊃ </td>
+            <td> ¹ </td>
+            <td> ² </td>
+            <td> ³ </td>
+            <td> ⊇ </td>
+            <td> ß </td>
+            <td> Τ </td>
+            <td> τ </td>
+            <td> ∴ </td>
+            <td> Θ </td>
+            <td> θ </td>
+            <td> ϑ </td>
+            <td>   </td>
+            <td> Þ </td>
+            <td> þ </td>
+            <td> ˜ </td>
+          </tr>
+          <tr>
+            <td> × </td>
+            <td> ™ </td>
+            <td> Ú </td>
+            <td> ú </td>
+            <td> ↑ </td>
+            <td> ⇑ </td>
+            <td> Û </td>
+            <td> û </td>
+            <td> Ù </td>
+            <td> ù </td>
+            <td> ¨ </td>
+            <td> ϒ </td>
+            <td> Υ </td>
+            <td> υ </td>
+            <td> Ü <td>
+            <td> ü </td>
+            <td> ℘ </td>
+            <td> Ξ </td>
+            <td> ξ </td>
+            <td> Ý </td>
+            <td> ý </td>
+            <td> ¥ </td>
+            <td> ÿ </td>
+            <td> Ÿ </td>
+            <td> Ζ <td>
+            <td> ζ <td> ‌
+          </tr>
+        </tbody>
+      </table>
 
-            <p>Hover over any character to find out the symbol that it produces. Some symbols not available in the current font will appear as empty squares.</p>
-            <table>
-              HTML symbol entities Á á Â â ´ Æ æ À à ℵ Α α & ∧ ∠ Å å ≈ Ã ã Ä ä „ Β β ¦ • ∩ Ç ç ¸ ¢ Χ χ ˆ ♣ ≅ © ↵ ∪ ¤ † ‡ ↓ ⇓ ° Δ δ ♦ ÷ É é Ê ê È è ∅     Ε ε ≡ Η η Ð ð Ë ë € ∃ ƒ ∀ ½ ¼ ¾ ⁄ Γ γ ≥ > ↔ ⇔ ♥ … Í í Î î ¡ Ì ì ℑ ∞ ∫ Ι ι ¿ ∈ Ï ï Κ κ Λ λ 〈 « ←
-              ⇐ ⌈ “ ≤ ⌊ ∗ ◊ ‎
-              ‹ ‘
-              < ¯ — µ · − Μ μ ∇ – ≠ ∋ ¬ ∉ ⊄ Ñ ñ Ν ν Ó ó Ô ô Œ œ Ò ò ‾ Ω ω Ο ο ⊕ ∨ ª º Ø ø Õ õ ⊗ Ö ö ¶ ∂ ‰ ⊥ Φ φ Π π ϖ ± £ ′ ″ ∏ ∝ Ψ ψ
-                "	√	〉	»	→	⇒	⌉	”	ℜ	®	⌋	Ρ	ρ	‏
-›	’	‚	Š	š	⋅	§		Σ	σ	ς	∼	♠	⊂	⊆	∑	⊃	¹	²	³	⊇	ß	Τ	τ	∴	Θ	θ	ϑ	 	Þ	þ	˜
-×	™	Ú	ú	↑	⇑	Û	û	Ù	ù	¨	ϒ	Υ	υ	Ü	ü	℘	Ξ	ξ	Ý	ý	¥	ÿ	Ÿ	Ζ	ζ	‍	‌
-</table>
-<table>Description	You type	You get
-Copyright symbol	&copy;
-©
-Greek delta letter symbol	&delta;
-δ
-Euro currency symbol	&euro;
-€
-</table>
-<p>See the list of all HTML entities on the Wikipedia article List of HTML entities. Additionally, MediaWiki supports two non-standard entity reference sequences: &רלמ; and &رلم; which are both considered equivalent to &rlm; which is a right-to-left mark. (Used when combining right to left languages with left to right languages in the same page.)</p>
+      <table>
+        <thead>
+          <td>Description</td>
+          <td>You type</td>
+          <td>You get</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Copyright symbol</td>
+            <td>&ampcopy;</td>
+            <td>©</td>
+          </tr>
+          <tr>
+            <td>Greek delta letter symbol </td>
+            <td>&ampdelta;</td>
+            <td>δ</td>
+          </tr>
+          <tr>
+            <td>
+              Euro currency symbol </td>
+            <td>&ampeuro;</td>
+            <td>€</td>
+          </tr>
+        </tbody>
+      </table>
 
-<h2>HTML tags and symbol entities displayed themselves (with and without interpreting them)</h2>
-&amp;euro;  → &euro;
-<span style="
-                color: red; text-decoration: line-through; ">Typo to be corrected
-          </span> → Typo to be corrected
-          &lt;span style=" color: red; text-decoration: line-through; ">Typo to be corrected</span> → <span style=" color:
-                red; text-decoration: line-through;
-                ">Typo to be corrected</span>
-          <h3>Nowiki for HTML</h3>
-          <nowiki /> can prohibit (HTML) tags:
+      <p>
+        See the list of all HTML entities on the Wikipedia article List of HTML entities. Additionally, MediaWiki supports two non-standard entity reference sequences: <code> &ampרלמ;</code> and <code>&ampرلم;</code> which are both considered
+        equivalent to <code>&amprlm;</code> which is a
+        right-to-left mark. (Used when combining right to left languages with left to right languages in the same page.)</p>
 
-          <<nowiki />pre> →
-          <pre>
-<p>But not & symbol escapes:</p>
+      <h2>
+        HTML tags and symbol entities displayed themselves (with and without interpreting them)
+      </h2>
+      <hr />
 
-&<nowiki />amp;  → &
-To print & symbol escapes as text, use "
-                &amp; " to replace the " & " character (eg. type " &amp;nbsp; ", which results in " &nbsp;
-                ").
+      <code>&ampamp;euro; → &ampeuro;</code>
+      <code>
+        &lt;span style="
+        color: red; text-decoration: line-through; "&gt;
+        Typo to be corrected
+        &lt;/span&gt;
+      </code> → Typo to be corrected
 
-<h2>Other formatting</h2>
-<p>Beyond the text formatting markup shown hereinbefore, here are some other formatting references:</p>
+      <code>
+        &lt;span style=" color: red; text-decoration: line-through; "&gt; Typo to be corrected &lt;/span &gt;
+      </code>
+      → <b>
+        &lt;span style=" color: red;
+        text-decoration: line-through;
+        "&gt; Typo to be corrected&lt;/span&gt;
+      </b>
 
+      <h3>Nowiki for HTML</h3>
+      <ul>
+        <li>&lt;nowiki /&gt; can prohibit (HTML) tags:</li>
+        <ul>
+          <li>&lt;&lt;nowiki /&gt;pre&gt; → &lt;pre&gt;</li>
+        </ul>
+        <li>But not & symbol escapes:</li>
+        <ul>
+          <li>&&lt;nowiki /&gt;amp; → &</li>
+        </ul>
+        <li>To print & symbol escapes as text, use " <code>&ampamp;</code> " to replace the " & " character (eg. type "<code> &mpamp;nbsp; </code>", which results in " <code>&mpnbsp;</code>").</li>
+      </ul>
 
-<a>Links</a>
-<a>Lists</a>
-<a>Images</a>
-<a>References - see Extension:Cite/Cite.php</a>
-<a>Tables
-<a>You can find more references at Help:Contents.</a>
+      <h2>Other formatting</h2>
+      <p>
+        Beyond the text formatting markup shown hereinbefore, here are some other formatting references:
+      </p>
 
- <a>HTML Living Standard—The <q> element</a>
-
+      <ul>
+        <li><a>Links</a></li>
+        <li><a>Lists</a></li>
+        <li><a>Images</a></li>
+        <li>References - see <a href="">Extension:Cite/Cite.php</a></li>
+        <li><a>Tables</li>
+        <li>You can find more references at <a>Help:Contents.</a></li>
+        <ol>
+          <li><a>HTML Living Standard—The <q> element</a></li>
+        </ol>
     </section>
   </main>
   <footer>
-        <p id="
-                footer-text-item ">&copy; 2019, <a class=" footer-link " href=" https://github.com/dimapositiva "><span id=" footer-link-text ">Soloviov Dmytro</span></a></p><p>Content source: <a href=" https://www.mediawiki.org/wiki/MediaWiki
-                ">MediaWiki</a>
+    <p id="
+          footer-text-item ">&copy; 2019, <a class=" footer-link " href=" https://github.com/dimapositiva "><span id=" footer-link-text ">Soloviov Dmytro</span></a></p>
+    <p>Content source: <a href=" https://www.mediawiki.org/wiki/MediaWiki
+          ">MediaWiki</a>
   </footer>
 </body>
 
