@@ -3,13 +3,43 @@
 body {
   background-color: #f2f2f2;
   font-family: 'Montserrat', sans-serif;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-gap: 5em;
 }
 
-/* li {
+li {
   list-style: none;
-} */
+}
 
 table, thead, tbody, th, td, tr {
   border: dotted 1px;
   border-collapse: collapse;
+}
+
+.main-logo {
+  width: 4em;
+}
+
+.navbar-header-container {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-gap: 1em;
+  justify-content: space-around;
+  align-content: center;
+  width: 80%;
+}
+
+nav {
+    position: fixed;
+}
+
+#navbar-logo-link {
+  display: grid;
+  align-content: center;
+}
+
+table {
+  width: 90%;
+  margin-top: 2em;
 }

@@ -10,50 +10,116 @@
 </head>
 
 <body>
-  <header>
-    <ul>
-      <li>
-        <h1>MediaWiki: Editing pages</h1>
-      </li>
-      <li>
-        <h2>Editing pages</h2>
-      </li>
-      <li>Editing rules, editing conventions, and formatting</li>
-      <li>Edit summary</li>
-      <li>Preview</li>
-      <li>Show changes</li>
-      <li>Protected pages</li>
-      <li>Other types of editing</li>
-      <li>Discussion</li>
-      <li>
-        <h2>Markup</h2>
-      </li>
-      <li>Text formatting markup</li>
-      <li>Level 2</li>
-      <li>Level 3</li>
-      <li>Level 4</li>
-      <li>Level 5</li>
-      <li>Level 6</li>
-      <li>Paragraphs</li>
-      <li>HTML tags</li>
-      <li>Inserting symbols</li>
-      <li>HTML tags and symbol entities displayed themselves (with and without interpreting them)</li>
-      <li>Nowiki for HTML</li>
-      <li>Other formatting</li>
-    </ul>
+  <header class="main-menu-container">
+    <nav id="navbar">
+      <header class="navbar-header-container">
+        <a id="navbar-logo-link" href="#">
+          <img class="main-logo" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/MediaWiki.svg/1200px-MediaWiki.svg.png">
+        </a>
+        <h1 id="navbar-main-header">
+          MediaWiki: <br />
+          Editing pages
+        </h1>
+      </header>
+      <ul class="main-menu-list sidebar">
+        <li class="main-menu-item">
+          <a class="nav-link" href="editing_pages">
+            <h2>Editing pages</h2>
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#edit_pages">
+            Editing rules, editing conventions, and formatting
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#edit_summary">
+            Edit summary
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#preview">
+            Preview
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#show_changes">
+            Show changes
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#protected_pages">
+            Protected pages
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#other_types_of_editing">
+            Other types of editing
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#discussion">
+            Discussion
+          </a>
+        </li>
+
+        <li class="main-menu-item">
+          <a class="nav-link" href="#markup">
+            <h2>Markup</h2>
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Text formatting markup
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Levels
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Paragraphs
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            HTML tags
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Inserting symbols
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            HTML tags and symbol entities displayed themselves (with and without interpreting them)
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Nowiki for HTML
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Other formatting
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main id="main-doc">
-
-    <section class="main-section">
+    <header>
+      <h1 id="editing_pages">Editing pages</h1>
       <!-- source:  https://www.mediawiki.org/wiki/Help:Editing_pages-->
-      <header>
-        <h1>Editing pages</h1>
-        <h2>It's very easy to edit the contents of a wiki:</h2>
-      </header>
-
+    </header>
+    <section class="main-section">
+      <h2 id="edit_pages">It's very easy to edit the contents of a wiki:</h2>
       <p>Click the "Edit" page tab at the top of the page. Make changes to the text. Click the "Save page" button. Simple as that!</p>
-
 
       <p>Editing rules, editing conventions, and formatting The number one rule of wiki editing is to be bold. Go ahead - make changes. Other people can correct any mistakes you make, so have confidence, and give it a try! There are all kinds of
         editing
@@ -66,43 +132,79 @@
       <p>When you need to use some type of formatting, such as for new headings or bolding of text, you do this using wiki syntax or the buttons in the edit toolbar above the editing zone. See Help:Formatting for some of the common types of
         formatting
         used.</p>
+    </section>
 
-      <h2>Edit summary</h2>
+    <section class="main-section">
+      <h2 id="edit_summary">Edit summary</h2>
       <p>Before you save a change, you can enter a short note (must be shorter than 500 characters) in the "Summary (?):" box describing your changes. Don't worry too much about this, or spend too much time thinking about it: just put in a short
         description
         of what you just changed. For example, you might say "fixed typo" or "added more information about sunflowers".</p>
 
       <p>This summary gets stored alongside your edit, and allows people to track changes in the wiki more effectively.</p>
-
-      <h2>Preview</h2>
-      <p>It's a good idea to use the "Show preview" button to see what your change will look like, before you save it. This is also related to tracking changes because every time you save, this is displayed to others as a separate change. This isn't
-        something to worry about too much, but it's good to get into the habit of eliminating mistakes in your own work, by using a preview before saving, rather than saving, then having to do another edit just to make one or more minor corrections.</p>
-
-      <h2>Show changes</h2>
-      <p>Another option is the "Show changes" button which allows you to see the differences between the current version and the edited version.</p>
-
-      <h2>Protected pages</h2>
-      <p>Pages that are protected cannot be edited by anyone except users of a specific group. Protected pages will instead display "View source" instead of edit. In that case, to edit a protected page, contact a user who has permission to edit the
-        page. The default protection levels are as follows:</p>
-
-      </h2>None (allow all users)</h2>
-      <p>Autoconfirmed (block new and unregistered users) Sysop (block all users except administrators) Other types of editing With wiki edits you can start a new page, move (or rename) a page, or even delete a page:</p>
-
-      <h3>Help:Starting a new page</h3>
-      <a href="#">Help:Moving a page</a> <br />
-      <a href="#">Help:Sysop deleting and undeleting</a> <br /> Remember you should always aim to improve the overall contents of the wiki with your edits.
-
-      <h2>Discussion</h2>
-      <p>Every article has its own "talk page" where you can ask questions, make suggestions, or discuss corrections. See Help:Talk pages.</p>
     </section>
 
     <section class="main-section">
-      source: https://www.mediawiki.org/wiki/Help:Formatting
+      <h2 id="preview">Preview</h2>
+      <p>It's a good idea to use the "Show preview" button to see what your change will look like, before you save it. This is also related to tracking changes because every time you save, this is displayed to others as a separate change. This isn't
+        something to worry about too much, but it's good to get into the habit of eliminating mistakes in your own work, by using a preview before saving, rather than saving, then having to do another edit just to make one or more minor corrections.</p>
+    </section>
+
+    <section class="main-section">
+      <h2 id="show_changes">Show changes</h2>
+      <p>Another option is the "Show changes" button which allows you to see the differences between the current version and the edited version.</p>
+    </section>
+
+    <section class="main-section">
+      <h2 id="protected_pages">Protected pages</h2>
+      <p>Pages that are protected cannot be edited by anyone except users of a specific group. Protected pages will instead display "View source" instead of edit. In that case, to edit a protected page, contact a user who has permission to edit the
+        page. The default protection levels are as follows:</p>
+      <ul>
+        <li>None (allow all users)</li>
+        <li>Autoconfirmed (block new and unregistered users)</li>
+        <li>Sysop (block all users except administrators)</li>
+      </ul>
+    </section>
+
+    <section class="main-section">
+      <h2 id="other_types_of_editing">
+        Other types of editing</h2>
+      <p> With wiki edits you can start a new page, move (or rename) a page, or even delete a page:
+        <ul>
+          <li>
+            <a href="https://www.mediawiki.org/wiki/Help:Starting_a_new_page">
+              Help:Starting a new page
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mediawiki.org/wiki/Help:Moving_a_page">
+              Help:Moving a page
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mediawiki.org/wiki/Help:Deletion_and_undeletion">
+              Help:Sysop deleting and undeleting
+            </a>
+          </li>
+        </ul>
+        <p>
+          Remember you should always aim to improve the overall contents of the wiki with your edits.
+        </p>
+
+        <h2 id="discussion">Discussion</h2>
+        <p>
+          Every article has its own "talk page" where you can ask questions, make suggestions, or discuss corrections. See Help:Talk pages.
+        </p>
+    </section>
+
+    <section class="main-section">
+      <!-- source: https://www.mediawiki.org/wiki/Help:Formatting-->
       <header>
         <h1>Text formatting markup</h1>
       </header>
-      <p>You can format your text by using wiki markup. This consists of normal characters like asterisks, apostrophes or equal signs which have a special function in the wiki, sometimes depending on their position. For example, to format a word in
-        italic, you include it in two pairs of apostrophes like ''this''.</P>
+      <p>
+        You can format your text by using wiki markup. This consists of normal characters like asterisks, apostrophes or equal signs which have a special function in the wiki, sometimes depending on their position. For example, to format a word in
+        italic, you include it in two pairs of apostrophes like ''this''.
+      </P>
 
       <table>
         <thead>
@@ -483,6 +585,8 @@
           </tr>
         </tbody>
       </table>
+</section>
+
 
       <h2>Paragraphs</h2>
       <hr />
@@ -499,7 +603,6 @@
             <td>You get</td>
           </tr>
         </thead>
-
         <tbody>
           <tr>
             <td>
@@ -545,10 +648,14 @@
             </td>
           </tr>
           <tr>
-            <td>Blockquotes </td>
-            <td>Text before <br />
+            <td>
+              Blockquotes
+            </td>
+            <td>
+              Text before <br />
               &lt;blockquote&gt; Blockquote &lt;/blockquote&gt; <br />
-              Text after </td>
+              Text after
+            </td>
             <td>
               Text before
               <blockquote>
@@ -589,22 +696,28 @@
           </tr>
 
           <tr>
-            <td>Customized <br />
-              preformatted text </td>
-            <td>&lt; pre style="color: red" &gt; </td>
-            <td>Text is '''preformatted'''
+            <td>
+              Customized <br />
+              preformatted text
+            </td>
+            <td>
+              &lt; pre style="color: red" &gt;
+            </td>
+            <td>
+              Text is '''preformatted'''
               with a style and
               ''markups'' '''''cannot''''' be done
-              &lt; /pre &gt; A CSS style can be named within the style attribute. Text is '''preformatted''' with a style and ''markups'' '''''cannot''''' be done</td>
+              &lt; /pre &gt; A CSS style can be named within the style attribute. Text is '''preformatted''' with a style and ''markups'' '''''cannot''''' be done
+            </td>
           </tr>
         <tbody>
       </table>
       <p>continued:</p>
       <table>
         <thead>
-          Description
-          You type
-          You get
+          <td>Description</td>
+          <td>You type</td>
+          <td>You get</td>
           <thead>
           <tbody>
             <tr>
@@ -947,7 +1060,9 @@
         See the list of all HTML entities on the Wikipedia article List of HTML entities. Additionally, MediaWiki supports two non-standard entity reference sequences: <code> &ampרלמ;</code> and <code>&ampرلم;</code> which are both considered
         equivalent to <code>&amprlm;</code> which is a
         right-to-left mark. (Used when combining right to left languages with left to right languages in the same page.)</p>
+</section>
 
+<section class="main-section">
       <h2>
         HTML tags and symbol entities displayed themselves (with and without interpreting them)
       </h2>
@@ -969,7 +1084,9 @@
         text-decoration: line-through;
         "&gt; Typo to be corrected&lt;/span&gt;
       </b>
+</section>
 
+<section class="main-section">
       <h3>Nowiki for HTML</h3>
       <ul>
         <li>&lt;nowiki /&gt; can prohibit (HTML) tags:</li>
@@ -982,29 +1099,66 @@
         </ul>
         <li>To print & symbol escapes as text, use " <code>&ampamp;</code> " to replace the " & " character (eg. type "<code> &mpamp;nbsp; </code>", which results in " <code>&mpnbsp;</code>").</li>
       </ul>
+</section>
 
+<section class="main-section">
       <h2>Other formatting</h2>
       <p>
         Beyond the text formatting markup shown hereinbefore, here are some other formatting references:
       </p>
 
       <ul>
-        <li><a>Links</a></li>
-        <li><a>Lists</a></li>
-        <li><a>Images</a></li>
-        <li>References - see <a href="">Extension:Cite/Cite.php</a></li>
-        <li><a>Tables</li>
-        <li>You can find more references at <a>Help:Contents.</a></li>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Links">
+            Links
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Help:Lists">
+            Lists
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Help:Images">
+            Images
+          </a>
+        </li>
+        <li>References - see <a href="https://www.mediawiki.org/wiki/Extension:Cite">Extension:Cite/Cite.php</a></li>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Help:Tables">
+            Tables
+          </a>
+        </li>
+        <li>
+          You can find more references at
+          <a href="https://www.mediawiki.org/wiki/Help:Contents">
+            Help:Contents.
+          </a>
+        </li>
         <ol>
-          <li><a>HTML Living Standard—The <q> element</a></li>
+          <li>
+            <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element">
+              HTML Living Standard—The &lt;q&gt; element
+            </a>
+          </li>
         </ol>
     </section>
   </main>
+
   <footer>
-    <p id="
-          footer-text-item ">&copy; 2019, <a class=" footer-link " href=" https://github.com/dimapositiva "><span id=" footer-link-text ">Soloviov Dmytro</span></a></p>
-    <p>Content source: <a href=" https://www.mediawiki.org/wiki/MediaWiki
-          ">MediaWiki</a>
+    <p id="footer-text-item ">
+      &copy; 2019, design by
+      <a class=" footer-link " href=" https://github.com/dimapositiva ">
+        <span id=" footer-link-text ">
+          Soloviov Dmytro
+        </span>
+      </a>
+    </p>
+    <p>
+      Content source:
+      <a href="https://www.mediawiki.org/wiki/MediaWiki">
+        MediaWiki
+      </a>
   </footer>
 </body>
 
