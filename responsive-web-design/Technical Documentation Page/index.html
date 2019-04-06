@@ -10,103 +10,201 @@
 </head>
 
 <body>
-  <header>
-    <ul>
-      <li>
-        <h1>MediaWiki: Editing pages</h1>
-      </li>
-      <li>
-        <h2>Editing pages</h2>
-      </li>
-      <li>Editing rules, editing conventions, and formatting</li>
-      <li>Edit summary</li>
-      <li>Preview</li>
-      <li>Show changes</li>
-      <li>Protected pages</li>
-      <li>Other types of editing</li>
-      <li>Discussion</li>
-      <li>
-        <h2>Markup</h2>
-      </li>
-      <li>Text formatting markup</li>
-      <li>Level 2</li>
-      <li>Level 3</li>
-      <li>Level 4</li>
-      <li>Level 5</li>
-      <li>Level 6</li>
-      <li>Paragraphs</li>
-      <li>HTML tags</li>
-      <li>Inserting symbols</li>
-      <li>HTML tags and symbol entities displayed themselves (with and without interpreting them)</li>
-      <li>Nowiki for HTML</li>
-      <li>Other formatting</li>
-    </ul>
+  <header class="main-menu-container">
+    <nav id="navbar">
+      <header class="navbar-header-container">
+        <a id="navbar-logo-link" href="#">
+          <img class="main-logo" alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/MediaWiki.svg/1200px-MediaWiki.svg.png">
+        </a>
+        <h1 id="navbar-main-header">
+          MediaWiki: <br />
+          Editing pages
+        </h1>
+      </header>
+      <ul class="main-menu-list sidebar">
+        <li class="main-menu-item">
+          <a class="nav-link" href="editing_pages">
+            <h2>Editing pages</h2>
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#edit_pages">
+            Editing rules, editing conventions, and formatting
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#edit_summary">
+            Edit summary
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#preview">
+            Preview
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#show_changes">
+            Show changes
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#protected_pages">
+            Protected pages
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#other_types_of_editing">
+            Other types of editing
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="#discussion">
+            Discussion
+          </a>
+        </li>
+
+        <li class="main-menu-item">
+          <a class="nav-link" href="#markup">
+            <h2>Markup</h2>
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Text formatting markup
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Levels
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Paragraphs
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            HTML tags
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Inserting symbols
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            HTML tags and symbol entities displayed themselves (with and without interpreting them)
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Nowiki for HTML
+          </a>
+        </li>
+        <li class="main-menu-item">
+          <a class="nav-link" href="">
+            Other formatting
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main id="main-doc">
-
-    <section class="main-section">
+    <header>
+      <h1 id="editing_pages">Editing pages</h1>
       <!-- source:  https://www.mediawiki.org/wiki/Help:Editing_pages-->
-      <header>
-        <h1>Editing pages</h1>
-        <h2>It's very easy to edit the contents of a wiki:</h2>
-      </header>
+    </header>
+    <section class="main-section">
+      <h2 id="edit_pages">It's very easy to edit the contents of a wiki:</h2>
+      <p>Click the "Edit" page tab at the top of the page. Make changes to the text. Click the "Save page" button. Simple as that!</p>
 
-      <p>Click the "Edit" page tab at the top of the page.
-        Make changes to the text.
-        Click the "Save page" button.
-        Simple as that!</p>
-
-
-      <p>Editing rules, editing conventions, and formatting
-        The number one rule of wiki editing is to be bold. Go ahead - make changes. Other people can correct any mistakes you make, so have confidence, and give it a try! There are all kinds of editing conventions, rules, and philosophies for the
-        editing of wiki pages, but the be bold rule is the most important of these!</p>
+      <p>Editing rules, editing conventions, and formatting The number one rule of wiki editing is to be bold. Go ahead - make changes. Other people can correct any mistakes you make, so have confidence, and give it a try! There are all kinds of
+        editing
+        conventions, rules, and philosophies for the editing of wiki pages, but the be bold rule is the most important of these!</p>
 
       <p>An edit can contribute whole new paragraphs or pages of information, or it can be as simple as fixing a typo or a spelling mistake. In general, try to add or edit text so that it is clear and concise. Most importantly, make sure you are
-        always aiming to do something which improves the contents of the wiki.</p>
+        always
+        aiming to do something which improves the contents of the wiki.</p>
 
       <p>When you need to use some type of formatting, such as for new headings or bolding of text, you do this using wiki syntax or the buttons in the edit toolbar above the editing zone. See Help:Formatting for some of the common types of
-        formatting used.</p>
-
-      <h2>Edit summary</h2>
-      <p>Before you save a change, you can enter a short note (must be shorter than 500 characters) in the "Summary (?):" box describing your changes. Don't worry too much about this, or spend too much time thinking about it: just put in a short
-        description of what you just changed. For example, you might say "fixed typo" or "added more information about sunflowers".</p>
-
-      <p>This summary gets stored alongside your edit, and allows people to track changes in the wiki more effectively.</p>
-
-      <h2>Preview</h2>
-      <p>It's a good idea to use the "Show preview" button to see what your change will look like, before you save it. This is also related to tracking changes because every time you save, this is displayed to others as a separate change. This isn't
-        something to worry about too much, but it's good to get into the habit of eliminating mistakes in your own work, by using a preview before saving, rather than saving, then having to do another edit just to make one or more minor corrections.</p>
-
-      <h2>Show changes</h2>
-      <p>Another option is the "Show changes" button which allows you to see the differences between the current version and the edited version.</p>
-
-      <h2>Protected pages</h2>
-      <p>Pages that are protected cannot be edited by anyone except users of a specific group. Protected pages will instead display "View source" instead of edit. In that case, to edit a protected page, contact a user who has permission to edit the
-        page. The default protection levels are as follows:</p>
-
-      </h2>None (allow all users)</h2>
-      <p>Autoconfirmed (block new and unregistered users)
-        Sysop (block all users except administrators)
-        Other types of editing
-        With wiki edits you can start a new page, move (or rename) a page, or even delete a page:</p>
-
-      <h3>Help:Starting a new page</h3>
-      <a href="#">Help:Moving a page</a> <br />
-      <a href="#">Help:Sysop deleting and undeleting</a> <br />
-      Remember you should always aim to improve the overall contents of the wiki with your edits.
-
-      <h2>Discussion</h2>
-      <p>Every article has its own "talk page" where you can ask questions, make suggestions, or discuss corrections. See Help:Talk pages.</p>
+        formatting
+        used.</p>
     </section>
 
     <section class="main-section">
-      source: https://www.mediawiki.org/wiki/Help:Formatting
+      <h2 id="edit_summary">Edit summary</h2>
+      <p>Before you save a change, you can enter a short note (must be shorter than 500 characters) in the "Summary (?):" box describing your changes. Don't worry too much about this, or spend too much time thinking about it: just put in a short
+        description
+        of what you just changed. For example, you might say "fixed typo" or "added more information about sunflowers".</p>
+
+      <p>This summary gets stored alongside your edit, and allows people to track changes in the wiki more effectively.</p>
+    </section>
+
+    <section class="main-section">
+      <h2 id="preview">Preview</h2>
+      <p>It's a good idea to use the "Show preview" button to see what your change will look like, before you save it. This is also related to tracking changes because every time you save, this is displayed to others as a separate change. This isn't
+        something to worry about too much, but it's good to get into the habit of eliminating mistakes in your own work, by using a preview before saving, rather than saving, then having to do another edit just to make one or more minor corrections.</p>
+    </section>
+
+    <section class="main-section">
+      <h2 id="show_changes">Show changes</h2>
+      <p>Another option is the "Show changes" button which allows you to see the differences between the current version and the edited version.</p>
+    </section>
+
+    <section class="main-section">
+      <h2 id="protected_pages">Protected pages</h2>
+      <p>Pages that are protected cannot be edited by anyone except users of a specific group. Protected pages will instead display "View source" instead of edit. In that case, to edit a protected page, contact a user who has permission to edit the
+        page. The default protection levels are as follows:</p>
+      <ul>
+        <li>None (allow all users)</li>
+        <li>Autoconfirmed (block new and unregistered users)</li>
+        <li>Sysop (block all users except administrators)</li>
+      </ul>
+    </section>
+
+    <section class="main-section">
+      <h2 id="other_types_of_editing">
+        Other types of editing</h2>
+      <p> With wiki edits you can start a new page, move (or rename) a page, or even delete a page:
+        <ul>
+          <li>
+            <a href="https://www.mediawiki.org/wiki/Help:Starting_a_new_page">
+              Help:Starting a new page
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mediawiki.org/wiki/Help:Moving_a_page">
+              Help:Moving a page
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mediawiki.org/wiki/Help:Deletion_and_undeletion">
+              Help:Sysop deleting and undeleting
+            </a>
+          </li>
+        </ul>
+        <p>
+          Remember you should always aim to improve the overall contents of the wiki with your edits.
+        </p>
+
+        <h2 id="discussion">Discussion</h2>
+        <p>
+          Every article has its own "talk page" where you can ask questions, make suggestions, or discuss corrections. See Help:Talk pages.
+        </p>
+    </section>
+
+    <section class="main-section">
+      <!-- source: https://www.mediawiki.org/wiki/Help:Formatting-->
       <header>
         <h1>Text formatting markup</h1>
       </header>
-      <p>You can format your text by using wiki markup. This consists of normal characters like asterisks, apostrophes or equal signs which have a special function in the wiki, sometimes depending on their position. For example, to format a word in
-        italic, you include it in two pairs of apostrophes like ''this''.</P>
+      <p>
+        You can format your text by using wiki markup. This consists of normal characters like asterisks, apostrophes or equal signs which have a special function in the wiki, sometimes depending on their position. For example, to format a word in
+        italic, you include it in two pairs of apostrophes like ''this''.
+      </P>
 
       <table>
         <thead>
@@ -158,9 +256,7 @@
                 <li>===== Level 5 =====</li>
                 <li>====== Level 6 ======</li>
               </ul>
-              <p>Skip Level 1, it is page name level.
-                Do not put any text on the same line after the ending equal signs.
-                An article with 4 or more headings automatically creates a table of contents (unless setting the magic word__NOTOC__).</p>
+              <p>Skip Level 1, it is page name level. Do not put any text on the same line after the ending equal signs. An article with 4 or more headings automatically creates a table of contents (unless setting the magic word__NOTOC__).</p>
             </td>
             <td>
               <ul>
@@ -176,14 +272,11 @@
           <tr>
             <td>Horizontal rule</td>
             <td>
-              Text before <br />
-              ---- <br />
-              Text after
+              Text before <br /> ---- <br /> Text after
             </td>
             <td>
               Text before
-              <hr />
-              Text after
+              <hr /> Text after
             </td>
           </tr>
           <tr>
@@ -225,8 +318,7 @@
                   </ul>
                 </li>
 
-                <li>Line breaks <br />
-                  don't break levels.</li>
+                <li>Line breaks <br /> don't break levels.</li>
                 <li>
                   <ul>
                     <li>But jumping levels creates empty space.</li>
@@ -281,16 +373,14 @@
                 <li>### But jumping levels creates empty space.</li>
                 <li># Blank lines</li>
                 <li># end the list and start another.</li>
-                <li>Any other start also
-                  ends the list.</li>
+                <li>Any other start also ends the list.</li>
             </td>
             <td>
               <ol>
                 <li>Start each line</li>
                 <li>
                   <ol>
-                    <li>with a number sign (#).
-                      More number signs give deeper
+                    <li>with a number sign (#). More number signs give deeper
                       <ol>
                         <li>and deeper</li>
                         <li>levels.</li>
@@ -298,44 +388,65 @@
                     </li>
                   </ol>
                 </li>
-                <li>Line breaks <br />
-                don't break levels.
-                <ol><li><ol><li>But jumping levels creates empty space.</li></ol></li></ol></li>
+                <li>Line breaks <br /> don't break levels.
+                  <ol>
+                    <li>
+                      <ol>
+                        <li>But jumping levels creates empty space.</li>
+                      </ol>
+                    </li>
+                  </ol>
+                </li>
                 <li>Blank lines</li>
-                <ol><li>end the list and start another.</li></ol>
+                <ol>
+                  <li>end the list and start another.</li>
                 </ol>
-                Any other start also ends the list.
-
+              </ol>
+              <p>Any other start also ends the list.</p>
             </td>
           </tr>
 
           <tr>
             <td>Definition list</td>
-            <td>;item 1
-              : definition 1
-              ;item 2
-              : definition 2-1
-              : definition 2-2
+            <td>
+              <ul>
+                <li>;item 1</li>
+                <li>: definition 1</li>
+                <li>;item 2</li>
+                <li>: definition 2-1</li>
+                <li>: definition 2-2</li>
+              </ul>
             </td>
             <td>
-              item 1
-              definition 1
-              item 2
-              definition 2-1
-              definition 2-2
+              <dl>
+                <dt>item 1</dt>
+                <dd>definition 1</dd>
+                <dt>item 2</dt>
+                <dd>definition 2-1</dd>
+                <dd>definition 2-2</dd>
+              </dl>
             </td>
           </tr>
           <tr>
             <td>Indent text</td>
-            <td>: Single indent
-              :: Double indent
-              ::::: Multiple indent
-              This workaround may harm accessibility.
+            <td>
+              <ul>
+                <li>: Single indent</li>
+                <li>:: Double indent</li>
+                <li>::::: Multiple indent</li>
+              </ul>
+              <p>This workaround may harm accessibility.</p>
             </td>
             <td>
-              Single indent
-              Double indent
-              Multiple indent
+              <ul>
+                <li>Single indent</li>
+                <ul>
+                  <li>Double indent</li>
+                  <ul>
+                    <li>Multiple indent</li>
+                  </ul>
+                </ul>
+              </ul>
             </td>
           </tr>
           <tr>
@@ -343,42 +454,57 @@
               Mixture of different types of list
             </td>
             <td>
-              # one
-              # two
-              #* two point one
-              #* two point two
-              # three
-              #; three item one
-              #: three def one
-              # four
-              #: four def one
-              #: this looks like a continuation
-              #: and is often used
-              #: instead <br />of <nowiki><br /></nowiki>
-              # five
-              ## five sub 1
-              ### five sub 1 sub 1
-              ## five sub 2
-              The usage of #: and *: for breaking a line within an item may also harm accessibility.
+              <ul>
+                <li># one
+                <li># two</li>
+                <li>#* two point one</li>
+                <li>#* two point two</li>
+                <li># three</li>
+                <li>#; three item one</li>
+                <li>#: three def one</li>
+                <li># four </li>
+                <li>#: four def one</li>
+                <li>#: this looks like a continuation</li>
+                <li>#: and is often used</li>
+                <li>#: instead &lt;br /&gt;of
+                  &lt;nowiki&gt;&lt;br /&gt;&lt;/nowiki&gt;</li>
+                <li># five</li>
+                <li>## five sub 1 </li>
+                <li>### five sub 1 sub 1</li>
+                <li>## five sub 2</li>
+              </ul>
+              <p>The usage of <span>#:</span> and <span>*:</span> for breaking a line within an item may also harm accessibility.</p>
             </td>
             <td>
-              one
-              two
-              two point one
-              two point two
-              three
-              three item one
-              three def one
-              four
-              four def one
-              this looks like a continuation
-              and is often used
-              instead
-              of <br />
-              five
-              five sub 1
-              five sub 1 sub 1
-              five sub 2
+              <ol>
+                <li>one</li>
+                <li>two</li>
+                <ul>
+                  <li>twopoint one </li>
+                  <li>two point two</li>
+                </ul>
+                <li>three
+                  <dl>
+                    <dt>three item one </dt>
+                    <dd>three def one</dd>
+                  </dl>
+                </li>
+                <li>four </li>
+                <ul>
+                  <li>four def one</li>
+                  <li>this looks like a continuation </li>
+                  <li>and is often used instead </li>
+                  <li>of &lt;br /&gt; </li>
+                </ul>
+                <li>five <ol>
+                    <li>five sub 1 five <ol>
+                        <li>sub 1 sub 1 </li>
+                      </ol>
+                    </li>
+                    <li>five sub 2</li>
+                  </ol>
+                </li>
+              </ol>
             </td>
           </tr>
           <tr>
@@ -386,218 +512,653 @@
               Preformatted text
             </td>
             <td>
-              Start each line with a space.
-              Text is '''preformatted''' and
-              ''markups'' '''''can''''' be done.
-              This way of preformatting only applies to section formatting. Character formatting markups are still effective.
+              Start each line with a space. Text is '''preformatted''' and ''markups'' '''''can''''' be done.
+              <p>
+                This way of preformatting only applies to section formatting. Character formatting markups are still effective.
+              </p>
             </td>
             <td>
-              Start each line with a space.
-              Text is preformatted and
-              markups can be done.
+              Start each line with a space. Text is preformatted and markups can be done.
             </td>
           <tr>
             <td>
               Preformatted text blocks
             </td>
             <td>
-              <nowiki>Start with a space in the first column,
-                (before the <nowiki>).
+              <ul>
+                <li>
+                  &lt;nowiki&gt; Start with a space in the <br />
+                  first column, <br />
+                  (before the &lt;nowiki&gt;).
+                </li>
+                <li>Then your block format will be <ul>
+                    <li>maintained.</li>
+                  </ul>
+                </li>
+                <li>This is good for copying in code blocks:</li>
+                <li>def function():
+                  <ul>
+                    <li>"""documentation string"""</li>
+                    <li>if True:</li>
+                    <ul>
+                      <li>print True</li>
+                    </ul>
 
-                  Then your block format will be
-                  maintained.
-
-                  This is good for copying in code blocks:
-
-                  def function():
-                  """documentation string"""
-
-                  if True:
-                  print True
-                  else:
-                  print False</nowiki>
+                    <li>else:
+                      <ul>
+                        <li>print False &lt; /nowiki &gt;</li>
+                      </ul>
+                  </ul>
+                </li>
+                </li>
+              </ul>
             </td>
             <td>
-              Start with a space in the first column,
-              (before the <nowiki>).
-
-                Then your block format will be
-                maintained.
-
-                This is good for copying in code blocks:
-
-                def function():
-                """documentation string"""
-
-                if True:
-                print True
-                else:
-                print False
+              <ul>
+                <li>
+                  Start with a space in the <br />
+                  first column, <br />
+                  (before the &lt;nowiki&gt;).
+                </li>
+                <li>Then your block format will be <ul>
+                    <li>maintained.
+                  </ul>
+                </li>
+                </li>
+                <li>This is good for copying in code blocks:</li>
+                <li>def function():
+                  <ul>
+                    <li>"""documentation string"""</li>
+                    <li>if True:</li>
+                    <ul>
+                      <li>print True</li>
+                    </ul>
+                    <li>else:
+                      <ul>
+                        <li>print False</li>
+                      </ul>
+                  </ul>
+                </li>
+                </li>
+              </ul>
             </td>
           </tr>
         </tbody>
       </table>
+</section>
+
 
       <h2>Paragraphs</h2>
-      <p>MediaWiki ignores single line breaks. To start a new paragraph, leave an empty line. You can force a line break within a paragraph with the HTML tag <br />.</p>
+      <hr />
+      <p>MediaWiki ignores single line breaks. To start a new paragraph, leave an empty line. You can force a line break within a paragraph with the HTML tag &lt; br /&gt;.</p>
 
-      HTML tags
-      Some HTML tags are allowed in MediaWiki, for example <code>, <div>, and <span>. These apply anywhere you insert them.
-            <table>
-              Description You type You get
-              Inserted
-              (Displays as underline in most browsers)
-              <ins>Inserted</ins>
-
-              or
-
+      <h2>HTML tags</h2>
+      <hr />
+      <p>Some HTML tags are allowed in MediaWiki, for example &lt; code &gt;, &lt; div &gt;, and &lt; span &gt;. These apply anywhere you insert them.</p>
+      <table>
+        <thead>
+          <tr>
+            <td>Description</td>
+            <td>You type</td>
+            <td>You get</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Inserted (Displays as underline in most browsers)
+            </td>
+            <td>
+              &lt; ins &gt; Inserted &lt; /ins &gt; <br />
+              or <br />
+              &lt; u &gt; Underline &lt; /u &gt;
+            </td>
+            <td>
+              <ins>Inserted</ins> <br />
+              or <br />
               <u>Underline</u>
-              Inserted
-
-              or
-
-              Underline
-
-              Deleted
-              (Displays as strikethrough in most browsers)
-              <s>Struck out</s>
-
-              or
-
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Deleted (Displays as strikethrough in most browsers)
+            </td>
+            <td>
+              &lt; s &gt; Struck out &lt; /s &gt; <br />
+              or <br />
+              &lt;del&gt; Deleted &lt; /del &gt;
+            </td>
+            <td>
+              <s>Struck out </s> <br />
+              or <br />
               <del>Deleted</del>
-
-              Struck out
-
-              or
-
-              Deleted
-
-              Fixed width text
-              <code>Source code</code>
-
-              or
-
+            </td>
+          </tr>
+          <tr>
+            <td>Fixed width text </td>
+            <td>
+              &lt;code&gt; Source code &lt; /code &gt; <br />
+              or <br />
+              &lt;code>Fixed width text&lt;/code&gt;
+            </td>
+            <td>
+              <code>Source code</code> <br />
+              or <br />
               <code>Fixed width text</code>
-              Source code
-
-              or
-
-              Fixed width text
-
+            </td>
+          </tr>
+          <tr>
+            <td>
               Blockquotes
-              Text before
-              <blockquote>Blockquote</blockquote>
+            </td>
+            <td>
+              Text before <br />
+              &lt;blockquote&gt; Blockquote &lt;/blockquote&gt; <br />
               Text after
+            </td>
+            <td>
               Text before
-
-              Blockquote
-
+              <blockquote>
+                Blockquote
+              </blockquote>
               Text after
-
-              Quotes
+            </td>
+          </tr>
+          <tr>
+            <td>Quotes</td>
+            <td>
+              &lt; q &gt; This is a quotation &lt;/q&gt; The q element must not be used in place of quotation marks that do not represent quotes; for example, it is inappropriate to use the q element for marking up sarcastic statements.[1]
+            </td>
+            <td>
               <q>This is a quotation</q>
-              The q element must not be used in place of quotation marks that do not represent quotes; for example, it is inappropriate to use the q element for marking up sarcastic statements.[1]
-              This is a quotation
-              Comment
-              <!-- This is a comment -->
-              Comments are visible only
-              in the edit zone.
-              Comments are visible only in the edit zone.
+            </td>
+          </tr>
 
-              Completely preformatted text
-              <pre>Text is '''preformatted''' and
-''markups'' '''''cannot''''' be done</pre>
-              For marking up of preformatted text, check the "Preformatted text" entry at the end of the previous table.
-              Text is '''preformatted''' and
-              ''markups'' '''''cannot''''' be done
-              Customized preformatted text
-              <pre style="color: red">Text is '''preformatted'''
-with a style and
-''markups'' '''''cannot''''' be done
-</pre>
-              A CSS style can be named within the style attribute.
+          <tr>
+            <td> Comment</td>
+            <td>
+              &lt;!-- This is a comment --&gt;
+              Comments are visible only in the edit zone.
+            </td>
+            <td>
+              Comments are visible only in the edit zone. </td>
+          </tr>
+
+          <tr>
+            <td>Completely preformatted text</td>
+            <td>&lt;pre>Text is '''preformatted''' and
+              ''markups'' '''''cannot''''' be done&lt;/pre&gt;
+              <p>For marking up of preformatted text, check the "Preformatted text" entry at the end of the previous table.</p>
+            </td>
+            <td>
+              Text is '''preformatted''' and ''markups'' '''''cannot''''' be done
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Customized <br />
+              preformatted text
+            </td>
+            <td>
+              &lt; pre style="color: red" &gt;
+            </td>
+            <td>
               Text is '''preformatted'''
               with a style and
               ''markups'' '''''cannot''''' be done
-            </table>
-            <p>continued:</p>
+              &lt; /pre &gt; A CSS style can be named within the style attribute. Text is '''preformatted''' with a style and ''markups'' '''''cannot''''' be done
+            </td>
+          </tr>
+        <tbody>
+      </table>
+      <p>continued:</p>
+      <table>
+        <thead>
+          <td>Description</td>
+          <td>You type</td>
+          <td>You get</td>
+          <thead>
+          <tbody>
+            <tr>
+              <td>
+                <b>Default</b> <br />
+                preformatted text has a CSS attribute (white-space: pre-wrap;) to wrap the text according to available width</td>
+              <td>
+                &lt;pre&gt; <br />
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer. <br />
+                &lt;/pre&gt; </td>
+              <td>
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer. </td>
+            </tr>
+            <tr>
+              <td>
+                <b>Customized</b> <br />
+                preformatted text with disabled text wrapping</td>
+              <td>
+                &lt;pre style="white-space: pre;"&gt; <br />
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer. <br />
+                &lt;/pre&gt;
+              </td>
+              <td>
+                This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
+              </td>
+            </tr>
+        <tbody>
+      </table>
 
-            <table>
-              Description You type You get
-              Default preformatted text has a CSS attribute (white-space: pre-wrap;) to wrap the text according to available width
-              <pre>
-This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
-</pre>
-              This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
-              Customized preformatted text with disabled text wrapping
-              <pre style="white-space: pre;">
-This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
-</pre>
-              This long sentence is used to demonstrate text wrapping. This additional sentence makes the text even longer. This additional sentence makes the text even longer.
-            </table>
-            <h2>Inserting symbols</h2>
-            <p>Symbols and other special characters not available on your keyboard can be inserted in a multitude of ways. Many Operating Systems and browsers allow you to insert special characters through a menu option or Operating System
-              panel.
-              Additionally, you can use the WikiEditor or VisualEditor to insert them into the edit screen.</p>
+      <h2>Inserting symbols</h2>
+      <hr />
+      <p>Symbols and other special characters not available on your keyboard can be inserted in a multitude of ways. <a href="https://www.howtogeek.com/210824/how-to-quickly-type-special-characters-on-any-computer-smartphone-or-tablet/">Many
+          Operating Systems and browsers</a> allow you to insert special characters through a menu option or Operating System panel.
+        Additionally,
+        you can use the WikiEditor or <a href="https://www.mediawiki.org/wiki/VisualEditor/Special_characters">VisualEditor</a> to insert them into the edit screen.</p>
 
-            <p>As a last resort, you can use a special sequence of characters. Those sequences are called HTML entities. For example, the following sequence (entity) &rarr; when inserted will be shown as right arrow HTML symbol → and &mdash;
-              when
-              inserted will be shown as an em dash HTML symbol —.</p>
+      <p>As a last resort, you can use a special sequence of characters. Those sequences are called HTML entities. For example, the following sequence (entity) <b>&rarr;</b> when inserted will be shown as right arrow HTML symbol → and <b>&ampmdash;</b>
+        when inserted will be shown as an <u>em dash</u> HTML symbol —.</p>
 
-            <p>Hover over any character to find out the symbol that it produces. Some symbols not available in the current font will appear as empty squares.</p>
-            <table>
-              HTML symbol entities
-              Á á Â â ´ Æ æ À à ℵ Α α & ∧ ∠ Å å ≈ Ã ã Ä ä „ Β β ¦ • ∩ Ç ç ¸ ¢
-              Χ χ ˆ ♣ ≅ © ↵ ∪ ¤ † ‡ ↓ ⇓ ° Δ δ ♦ ÷ É é Ê ê È è ∅     Ε ε ≡ Η η
-              Ð ð Ë ë € ∃ ƒ ∀ ½ ¼ ¾ ⁄ Γ γ ≥ > ↔ ⇔ ♥ … Í í Î î ¡ Ì ì ℑ ∞ ∫ Ι ι
-              ¿ ∈ Ï ï Κ κ Λ λ 〈 « ← ⇐ ⌈ “ ≤ ⌊ ∗ ◊ ‎ ‹ ‘ < ¯ — µ · − Μ μ ∇ – ≠ ∋ ¬ ∉ ⊄ Ñ ñ Ν ν Ó ó Ô ô Œ œ Ò ò ‾ Ω ω Ο ο ⊕ ∨ ª º Ø ø Õ õ ⊗ Ö ö ¶ ∂ ‰ ⊥ Φ φ Π π ϖ ± £ ′ ″ ∏ ∝ Ψ ψ
-                "	√	〉	»	→	⇒	⌉	”	ℜ	®	⌋	Ρ	ρ	‏
-›	’	‚	Š	š	⋅	§		Σ	σ	ς	∼	♠	⊂	⊆	∑	⊃	¹	²	³	⊇	ß	Τ	τ	∴	Θ	θ	ϑ	 	Þ	þ	˜
-×	™	Ú	ú	↑	⇑	Û	û	Ù	ù	¨	ϒ	Υ	υ	Ü	ü	℘	Ξ	ξ	Ý	ý	¥	ÿ	Ÿ	Ζ	ζ	‍	‌
-</table>
-<table>Description	You type	You get
-Copyright symbol	&copy;
-©
-Greek delta letter symbol	&delta;
-δ
-Euro currency symbol	&euro;
-€
-</table>
-<p>See the list of all HTML entities on the Wikipedia article List of HTML entities. Additionally, MediaWiki supports two non-standard entity reference sequences: &רלמ; and &رلم; which are both considered equivalent to &rlm; which is a right-to-left mark. (Used when combining right to left languages with left to right languages in the same page.)</p>
+      <p>Hover over any character to find out the symbol that it produces. Some symbols not available in the current font will appear as empty squares.</p>
 
-<h2>HTML tags and symbol entities displayed themselves (with and without interpreting them)</h2>
-&amp;euro;  → &euro;
-<span style="
-                color: red; text-decoration: line-through;">Typo to be corrected
-          </span> → Typo to be corrected
-          &lt;span style="color: red; text-decoration: line-through;">Typo to be corrected</span> → <span style="color: red; text-decoration: line-through;">Typo to be corrected</span>
-          <h3>Nowiki for HTML</h3>
-          <nowiki /> can prohibit (HTML) tags:
+      <table>
+        <thead>
+          HTML symbol entities
+        </thead>
+        <tbody>
+          <tr>
+            <td> Á </td>
+            <td> á </td>
+            <td> Â </td>
+            <td> â </td>
+            <td> ´ </td>
+            <td> Æ </td>
+            <td> æ </td>
+            <td> À </td>
+            <td> à </td>
+            <td> ℵ </td>
+            <td> Α </td>
+            <td> α </td>
+            <td> & </td>
+            <td> ∧ </td>
+            <td> ∠ </td>
+            <td> Å </td>
+            <td> å </td>
+            <td> &asymp; </td>
+            <td> Ã </td>
+            <td> ã </td>
+            <td> Ä </td>
+            <td> ä </td>
+            <td> „ </td>
+            <td> Β </td>
+            <td> β </td>
+            <td> ¦ </td>
+            <td> • </td>
+            <td> ∩ </td>
+            <td> Ç </td>
+            <td> ç </td>
+            <td> ¸ </td>
+            <td> ¢ </td>
+          </tr>
+          <tr>
+            <td> Χ </td>
+            <td> χ </td>
+            <td> ˆ </td>
+            <td> ♣ </td>
+            <td> ≅ </td>
+            <td> © </td>
+            <td> ↵ </td>
+            <td> ∪ </td>
+            <td> ¤ </td>
+            <td> † </td>
+            <td> ‡ </td>
+            <td> ↓ </td>
+            <td> ⇓ </td>
+            <td> ° </td>
+            <td> Δ </td>
+            <td> δ </td>
+            <td> ♦ </td>
+            <td> ÷ </td>
+            <td> É </td>
+            <td> é </td>
+            <td> Ê </td>
+            <td> ê </td>
+            <td> È </td>
+            <td> è </td>
+            <td> ∅ </td>
+            <td> </td>
+            <td> </td>
+            <td>Ε </td>
+            <td>ε </td>
+            <td> ≡ </td>
+            <td> Η </td>
+            <td> η </td>
+          </tr>
+          <tr>
+            <td> Ð </td>
+            <td> ð </td>
+            <td> Ë </td>
+            <td> ë </td>
+            <td> € </td>
+            <td> ∃ </td>
+            <td> ƒ </td>
+            <td> ∀ </td>
+            <td> ½ </td>
+            <td> ¼ </td>
+            <td> ¾ </td>
+            <td> ⁄ </td>
+            <td> Γ </td>
+            <td> γ </td>
+            <td> ≥ </td>
+            <td> > </td>
+            <td> ↔ </td>
+            <td> ⇔ </td>
+            <td> ♥ </td>
+            <td> … </td>
+            <td> Í </td>
+            <td> í </td>
+            <td> Î </td>
+            <td> î </td>
+            <td> ¡ </td>
+            <td> Ì </td>
+            <td> ì </td>
+            <td> ℑ </td>
+            <td> ∞ </td>
+            <td> ∫ </td>
+            <td> Ι </td>
+            <td> ι </td>
+          </tr>
+          <tr>
+            <td> ¿ </td>
+            <td> ∈ </td>
+            <td> Ï </td>
+            <td> ï </td>
+            <td> Κ </td>
+            <td> κ </td>
+            <td> Λ </td>
+            <td> λ </td>
+            <td> 〈 </td>
+            <td> « </td>
+            <td> ← </td>
+            <td> ⇐ </td>
+            <td> ⌈ </td>
+            <td> “ </td>
+            <td> ≤ </td>
+            <td> ⌊ </td>
+            <td> ∗ </td>
+            <td> ◊ </td>
+            <td>‎ ‹ </td>
+            <td> ‘ <td>
+            <td>
+              < </td> <td> ¯
+            </td>
+            <td> — </td>
+            <td> µ </td>
+            <td> · </td>
+            <td> − </td>
+            <td> Μ </td>
+            <td> μ </td>
+            <td> ∇ </td>
+            <td> – </td>
+            <td> ≠ </td>
+          </tr>
+          <tr>
+            <td> ∋ </td>
+            <td> ¬ </td>
+            <td> ∉ </td>
+            <td> ⊄ </td>
+            <td> Ñ </td>
+            <td> ñ </td>
+            <td> Ν </td>
+            <td> ν </td>
+            <td> Ó </td>
+            <td> ó </td>
+            <td> Ô </td>
+            <td> ô </td>
+            <td> Œ </td>
+            <td> œ </td>
+            <td> Ò </td>
+            <td> ò </td>
+            <td> ‾ </td>
+            <td> Ω </td>
+            <td> ω </td>
+            <td> Ο </td>
+            <td> ο </td>
+            <td> ⊕ </td>
+            <td> ∨ </td>
+            <td> ª </td>
+            <td> º </td>
+            <td> Ø </td>
+            <td> ø </td>
+            <td> Õ </td>
+            <td> õ </td>
+            <td> ⊗ </td>
+            <td> Ö </td>
+          </tr>
+          <tr>
+            <td> ö </td>
+            <td> ¶ </td>
+            <td> ∂ </td>
+            <td> ‰ </td>
+            <td> ⊥ </td>
+            <td> Φ </td>
+            <td> φ </td>
+            <td> Π </td>
+            <td> π </td>
+            <td> ϖ </td>
+            <td> ± </td>
+            <td> £ </td>
+            <td> ′ </td>
+            <td> ″ </td>
+            <td> ∏ </td>
+            <td> ∝ </td>
+            <td> Ψ </td>
+            <td> ψ </td>
+            <td> " </td>
+            <td> √ </td>
+            <td> 〉 </td>
+            <td> » </td>
+            <td> → </td>
+            <td> ⇒ </td>
+            <td> ⌉ </td>
+            <td> ” </td>
+            <td> ℜ </td>
+            <td> ® </td>
+            <td> ⌋ </td>
+            <td> Ρ</td>
+            <td> ρ </td>
+          </tr>
+          <tr>
+            <td> › </td>
+            <td> ’ </td>
+            <td> ‚ </td>
+            <td> Š </td>
+            <td> š </td>
+            <td> ⋅ </td>
+            <td> § </td>
+            <td> Σ </td>
+            <td> σ </td>
+            <td> ς </td>
+            <td> ∼ </td>
+            <td> ♠ </td>
+            <td> ⊂ </td>
+            <td> ⊆ </td>
+            <td> ∑ </td>
+            <td> ⊃ </td>
+            <td> ¹ </td>
+            <td> ² </td>
+            <td> ³ </td>
+            <td> ⊇ </td>
+            <td> ß </td>
+            <td> Τ </td>
+            <td> τ </td>
+            <td> ∴ </td>
+            <td> Θ </td>
+            <td> θ </td>
+            <td> ϑ </td>
+            <td>   </td>
+            <td> Þ </td>
+            <td> þ </td>
+            <td> ˜ </td>
+          </tr>
+          <tr>
+            <td> × </td>
+            <td> ™ </td>
+            <td> Ú </td>
+            <td> ú </td>
+            <td> ↑ </td>
+            <td> ⇑ </td>
+            <td> Û </td>
+            <td> û </td>
+            <td> Ù </td>
+            <td> ù </td>
+            <td> ¨ </td>
+            <td> ϒ </td>
+            <td> Υ </td>
+            <td> υ </td>
+            <td> Ü <td>
+            <td> ü </td>
+            <td> ℘ </td>
+            <td> Ξ </td>
+            <td> ξ </td>
+            <td> Ý </td>
+            <td> ý </td>
+            <td> ¥ </td>
+            <td> ÿ </td>
+            <td> Ÿ </td>
+            <td> Ζ <td>
+            <td> ζ <td> ‌
+          </tr>
+        </tbody>
+      </table>
 
-          <<nowiki />pre> →
-          <pre>
-<p>But not & symbol escapes:</p>
+      <table>
+        <thead>
+          <td>Description</td>
+          <td>You type</td>
+          <td>You get</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Copyright symbol</td>
+            <td>&ampcopy;</td>
+            <td>©</td>
+          </tr>
+          <tr>
+            <td>Greek delta letter symbol </td>
+            <td>&ampdelta;</td>
+            <td>δ</td>
+          </tr>
+          <tr>
+            <td>
+              Euro currency symbol </td>
+            <td>&ampeuro;</td>
+            <td>€</td>
+          </tr>
+        </tbody>
+      </table>
 
-&<nowiki />amp;  → &
-To print & symbol escapes as text, use "&amp;" to replace the "&" character (eg. type "&amp;nbsp;", which results in "&nbsp;").
+      <p>
+        See the list of all HTML entities on the Wikipedia article List of HTML entities. Additionally, MediaWiki supports two non-standard entity reference sequences: <code> &ampרלמ;</code> and <code>&ampرلم;</code> which are both considered
+        equivalent to <code>&amprlm;</code> which is a
+        right-to-left mark. (Used when combining right to left languages with left to right languages in the same page.)</p>
+</section>
 
-<h2>Other formatting</h2>
-<p>Beyond the text formatting markup shown hereinbefore, here are some other formatting references:</p>
+<section class="main-section">
+      <h2>
+        HTML tags and symbol entities displayed themselves (with and without interpreting them)
+      </h2>
+      <hr />
 
+      <code>&ampamp;euro; → &ampeuro;</code>
+      <code>
+        &lt;span style="
+        color: red; text-decoration: line-through; "&gt;
+        Typo to be corrected
+        &lt;/span&gt;
+      </code> → Typo to be corrected
 
-<a>Links</a>
-<a>Lists</a>
-<a>Images</a>
-<a>References - see Extension:Cite/Cite.php</a>
-<a>Tables
-<a>You can find more references at Help:Contents.</a>
+      <code>
+        &lt;span style=" color: red; text-decoration: line-through; "&gt; Typo to be corrected &lt;/span &gt;
+      </code>
+      → <b>
+        &lt;span style=" color: red;
+        text-decoration: line-through;
+        "&gt; Typo to be corrected&lt;/span&gt;
+      </b>
+</section>
 
- <a>HTML Living Standard—The <q> element</a>
+<section class="main-section">
+      <h3>Nowiki for HTML</h3>
+      <ul>
+        <li>&lt;nowiki /&gt; can prohibit (HTML) tags:</li>
+        <ul>
+          <li>&lt;&lt;nowiki /&gt;pre&gt; → &lt;pre&gt;</li>
+        </ul>
+        <li>But not & symbol escapes:</li>
+        <ul>
+          <li>&&lt;nowiki /&gt;amp; → &</li>
+        </ul>
+        <li>To print & symbol escapes as text, use " <code>&ampamp;</code> " to replace the " & " character (eg. type "<code> &mpamp;nbsp; </code>", which results in " <code>&mpnbsp;</code>").</li>
+      </ul>
+</section>
 
+<section class="main-section">
+      <h2>Other formatting</h2>
+      <p>
+        Beyond the text formatting markup shown hereinbefore, here are some other formatting references:
+      </p>
+
+      <ul>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Links">
+            Links
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Help:Lists">
+            Lists
+          </a>
+        </li>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Help:Images">
+            Images
+          </a>
+        </li>
+        <li>References - see <a href="https://www.mediawiki.org/wiki/Extension:Cite">Extension:Cite/Cite.php</a></li>
+        <li>
+          <a href="https://www.mediawiki.org/wiki/Help:Tables">
+            Tables
+          </a>
+        </li>
+        <li>
+          You can find more references at
+          <a href="https://www.mediawiki.org/wiki/Help:Contents">
+            Help:Contents.
+          </a>
+        </li>
+        <ol>
+          <li>
+            <a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-q-element">
+              HTML Living Standard—The &lt;q&gt; element
+            </a>
+          </li>
+        </ol>
     </section>
   </main>
+
   <footer>
-        <p id="footer-text-item">&copy; 2019, <a class="footer-link" href="https://github.com/dimapositiva"><span id="footer-link-text">Soloviov Dmytro</span></a></p><p>Content source: <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a>
+    <p id="footer-text-item ">
+      &copy; 2019, design by
+      <a class=" footer-link " href=" https://github.com/dimapositiva ">
+        <span id=" footer-link-text ">
+          Soloviov Dmytro
+        </span>
+      </a>
+    </p>
+    <p>
+      Content source:
+      <a href="https://www.mediawiki.org/wiki/MediaWiki">
+        MediaWiki
+      </a>
   </footer>
 </body>
 
