@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+
+body {
+  margin: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 1em 0 1em 0;
+}
+
+#header-logo {
+  margin-left: 1em;
+  font-family: 'Dokdo', cursive;
+  font-weight: bold;
+  font-size: 4em;
+  text-decoration: underline;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  height: 400px;
+}
+
+footer {
+  background-color: #e699ff;
+  height: 5em;
+  align-items: center;
+}
