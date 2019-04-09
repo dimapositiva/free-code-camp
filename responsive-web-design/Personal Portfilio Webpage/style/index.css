@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -40,9 +42,14 @@ a {
 }
 
 main {
-  height: 400px;
+  display: grid;
+  justify-content: center;
 }
 
+#main-photo {
+  width: 20em;
+  border-radius: 10em;
+}
 footer {
   background-color: #e699ff;
   height: 5em;
