@@ -12,41 +12,177 @@
 <body>
   <header>
     <a id="header-logo" href="#">DS</a>
-    <ul>
-    <li><a href="https://github.com/dimapositiva/free-code-camp/issues" target="_blank">
-      <img class="header-logo-link" alt="Bug report link logo" src="https://raw.githubusercontent.com/dimapositiva/free-code-camp/master/responsive-web-design/Tribute%20Page/img/bug.jpg">
-    </a></li>
-    <li><a href="https://github.com/dimapositiva" target="_blank">
-      <img class="header-logo-link" alt="Github link logo" src="https://raw.githubusercontent.com/dimapositiva/free-code-camp/master/responsive-web-design/Tribute%20Page/img/github.png">
-    </a></li>
-    <li><a href="https://www.freecodecamp.org/dimapositiva" target="_blank">
-      <img class="header-logo-link" alt="Freecodecamp link logo" src="https://raw.githubusercontent.com/dimapositiva/free-code-camp/master/responsive-web-design/Tribute%20Page/img/freecodecamp.png">
-    </a></li>
-    <li><a href="https://www.facebook.com/dmitriy.solovevcom" target="_blank">
-    <img class="header-logo-link" alt="facebook-logo" src="./img/fb.png"/>
-  </a></li>
-</ul>
+    <nav id="navbar">
+      <ul>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+    </ul>
+    </nav>
+    <ul class="header-links-list">
+      <li>
+        <a href="https://github.com/dimapositiva/free-code-camp/issues" target="_blank">
+          <img class="header-logo-link" alt="Bug report link logo" src="https://raw.githubusercontent.com/dimapositiva/free-code-camp/master/responsive-web-design/Tribute%20Page/img/bug.jpg">
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/dimapositiva" target="_blank">
+          <img class="header-logo-link" alt="Github link logo" src="https://raw.githubusercontent.com/dimapositiva/free-code-camp/master/responsive-web-design/Tribute%20Page/img/github.png">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.freecodecamp.org/dimapositiva" target="_blank">
+          <img class="header-logo-link" alt="Freecodecamp link logo" src="https://raw.githubusercontent.com/dimapositiva/free-code-camp/master/responsive-web-design/Tribute%20Page/img/freecodecamp.png">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/dmitriy.solovevcom" target="_blank">
+          <img class="header-logo-link" alt="facebook-logo" src="./img/fb.png" />
+        </a>
+      </li>
+    </ul>
   </header>
 
   <main>
-    <section>
-      <article>
+    <section id="welcome-section">
       <h1>Hi, my name is Dmytro Soloviov</h1>
-      <p>I'm a web developer</p>
-      <img id="main-photo" src="./img/dmytro.jpeg" alt="photo-dmytro"/>
-    </article>
-    <article>
-      <h2>Skills</h2>
-    </article>
-    <article>
-      <h2>Technologies</h2>
-    </article>
-    <article>
-      <h2>Tools</h2>
-    </article>
-    <article>
-      <h2>My projects</h2>
-    </article>
+        <img id="main-photo" src="./img/dmytro.jpeg" alt="photo-dmytro" />
+        <p>I'm a web developer</p>
+        <p>
+          Until now, I have worked as a lawyer at IT company which is developing a social platform and other services. However, I decided to finally move to the side of developers. Because I believe that code is law.
+        </p>
+        <p>
+          Some years ago, I began to study the principles of the work of the Internet, web and other technologies. It has grown into a hobby, which I turn into my new profession now.
+        </p>
+        <p>
+          Most of my free time I spend studying computer science, algorithms, databases, UI/UX, watching top design sites and apps, improving my practical skills on the layout of websites, trying to develop SPA, PWA and writing code in JavaScript.
+        </p>
+    </section>
+
+    <section id="skills">
+      <article class="main-section-article">
+        <h2 class="main-section-article-header">
+          Skills
+        </h2>
+        <ul class="main-section-article-list">
+          <li class="main-section-article-list-item">
+            UI/UX design
+          </li>
+          <li class="main-section-article-list-item">
+            site layout
+          </li>
+          <li class="main-section-article-list-item">
+            understanding of software development lifecycle (web app lifecycle)
+          </li>
+          <li class="main-section-article-list-item">
+            collection and analysis software requirements, writing user stories
+          </li>
+          <li class="main-section-article-list-item">
+            knowledge and application of agile methodologies (Scrum, Kanban, XP, LSD)
+          </li>
+          <li class="main-section-article-list-item">
+            negotiations and mediation
+          </li>
+          <li class="main-section-article-list-item">
+            good communication skills
+          </li>
+        </ul>
+      </article>
+
+      <article class="main-section-article">
+        <h2 class="main-section-article-header">
+          Technologies and Tools
+        </h2>
+        <ul class="main-section-article-list">
+          <li class="main-section-article-list-item">
+            <h3 class="main-section-article-list-header">
+              Programming Languages/Technologies
+            </h3>
+          </li>
+          <li class="main-section-article-list-item">JavaScript (include ES.next)</li>
+          <li class="main-section-article-list-item">
+            HTML5/CSS3
+          </li>
+          <li class="main-section-article-list-item">
+            PHP 7+ (fundamental)
+          </li>
+          <li class="main-section-article-list-item">
+            Python (fundamental)
+          </li>
+          <li class="main-section-article-list-item">
+            MySQL (fundamental)
+          </li>
+          <li class="main-section-article-list-item">
+            MongoDB
+          </li>
+        </ul>
+
+        <ul class="main-section-article-list">
+          <li class="main-section-article-list-item">
+            <h3 class="main-section-article-list-header">
+              Frameworks and Libraries
+            </h3>
+          </li>
+          <li class="main-section-article-list-item">Node.js</li>
+          <li class="main-section-article-list-item">Meteor.js</li>
+          <li class="main-section-article-list-item">React.js</li>
+          <li class="main-section-article-list-item">Redux.js</li>
+          <li class="main-section-article-list-item">Express.js</li>
+          <li class="main-section-article-list-item">jQuery</li>
+          <li class="main-section-article-list-item">Bootstrap</li>
+        </ul>
+
+        <ul class="main-section-article-list">
+          <li class="main-section-article-list-item">
+            <h3 class="main-section-article-list-header">Development tools</h3>
+          </li>
+          <li class="main-section-article-list-item">Atom</li>
+          <li class="main-section-article-list-item">Visual Studio Code</li>
+          <li class="main-section-article-list-item">web Storm</li>
+          <li class="main-section-article-list-item">Git/GitHub</li>
+          <li class="main-section-article-list-item">Chrome/Mozilla DevTools</li>
+          <li class="main-section-article-list-item">npm</li>
+          <li class="main-section-article-list-item">webpack</li>
+          <li class="main-section-article-list-item">Babel</li>
+        </ul>
+      </article>
+      <article class="main-section-article">
+        <h2 class="main-section-article-header">Education</h2>
+        <ul class="main-section-article-list">
+          <li class="main-section-article-list-item"></li>
+          <li class="main-section-article-list-item"></li>
+          <li class="main-section-article-list-item"></li>
+          <li class="main-section-article-list-item"></li>
+          <li class="main-section-article-list-item"></li>
+        </ul>
+      </article>
+</section>
+
+<section id="projects">
+      <article class="main-section-article">
+        <h2 class="main-section-article-header">My projects</h2>
+        <ul class="main-section-article-list">
+          <li class="main-section-article-list-item">
+            <h3 class="project-tile">
+            </h3>
+          </li>
+          <li class="main-section-article-list-item">
+            <h3 class="project-tile">
+            </h3>
+          </li>
+          <li class="main-section-article-list-item">
+            <h3 class="project-tile">
+            </h3>
+          </li>
+          <li class="main-section-article-list-item">
+            <h3 class="project-tile">
+            </h3>
+          </li>
+          <li class="main-section-article-list-item">
+            <h3 class="project-tile">
+            </h3>
+          </li>
+        </ul>
+      </article>
     </section>
   </main>
 

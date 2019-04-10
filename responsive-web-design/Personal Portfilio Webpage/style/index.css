@@ -8,7 +8,7 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 20% 50% 30%;
   justify-content: space-between;
   background-color: #f2f2f2;
   padding: 1em 0 1em 0;
@@ -22,11 +22,15 @@ header {
   text-decoration: underline;
 }
 
-ul {
+ul.header-links-list {
   display: grid;
   grid-template-columns: repeat(4, 20%);
   justify-content: flex-end;
   align-items: center;
+}
+
+ul.main-section-article-list {
+  display: grid;
 }
 
 li {
@@ -46,12 +50,18 @@ main {
   justify-content: center;
 }
 
+article.main-section-article {
+  display: grid;
+  justify-content: center;
+}
+
 #main-photo {
   width: 20em;
   border-radius: 10em;
 }
+
 footer {
-  background-color: #e699ff;
+  background-color: #b3d1ff;
   height: 5em;
   align-items: center;
 }
