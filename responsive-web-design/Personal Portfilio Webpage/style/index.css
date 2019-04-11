@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 20% 50% 30%;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 1em 0 1em 0;
+}
+
+#header-logo {
+  margin-left: 1em;
+  font-family: 'Dokdo', cursive;
+  font-weight: bold;
+  font-size: 4em;
+  text-decoration: underline;
+}
+
+ul.header-links-list {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul.main-section-article-list {
+  display: grid;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+}
+
+article.main-section-article {
+  display: grid;
+  justify-content: center;
+}
+
+#main-photo {
+  width: 20em;
+  border-radius: 10em;
+}
+
+footer {
+  background-color: #b3d1ff;
+  height: 5em;
+  align-items: center;
+}
