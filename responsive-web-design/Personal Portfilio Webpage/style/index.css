@@ -50,6 +50,13 @@ main {
   justify-content: center;
 }
 
+#welcome-section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60%;
+  justify-content: center;
+}
+
 article.main-section-article {
   display: grid;
   justify-content: center;
@@ -62,8 +69,8 @@ header#welcome-section-header {
 }
 
 #main-photo {
-  width: 20em;
-  border-radius: 10em;
+  width: 15em;
+  border-radius: 50%;
 }
 
 footer {
