@@ -55,6 +55,7 @@ main {
   display: grid;
   grid-template-columns: 60%;
   justify-content: center;
+  background-color: #fff;
 }
 
 article.main-section-article {
