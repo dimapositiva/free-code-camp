@@ -68,6 +68,29 @@ article.main-section-article {
   border-radius: 50%;
 }
 
+.main-section-article-header {
+  text-align: center;
+}
+.project-img {
+  width: 20em;
+}
+
+.project-img:hover {
+  box-shadow: 10px 8px 5px 0px #9BAFDB;
+}
+
+#project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 30em);
+  justify-content: space-around;
+  grid-gap: 3em;
+}
+
+.projects-list-item {
+  display: grid;
+  justify-content: center;
+}
+
 footer {
   background-color: #b3d1ff;
   height: 5em;
