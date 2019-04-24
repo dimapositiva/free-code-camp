@@ -75,6 +75,12 @@ article.main-section-article {
   justify-content: center;
 }
 
+header#welcome-section-header {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+}
+
 #main-photo {
   width: 15em;
   border-radius: 50%;
