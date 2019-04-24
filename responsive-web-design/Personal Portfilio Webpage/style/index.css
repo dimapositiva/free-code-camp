@@ -6,7 +6,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header {
+header#main-header {
   display: grid;
   grid-template-columns: 20% 50% 30%;
   justify-content: space-between;
@@ -37,7 +37,7 @@ li {
   list-style: none;
 }
 
-img {
+img.header-logo-link {
   width: 2em;
 }
 
@@ -53,11 +53,23 @@ main {
 #welcome-section {
   height: 100vh;
   display: grid;
-  grid-template-columns: 60%;
+  /* grid-template-columns: 60%; */
   justify-content: center;
   background-color: #fff;
 }
 
+#welcome-section-header {
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
 article.main-section-article {
   display: grid;
   justify-content: center;
@@ -66,6 +78,7 @@ article.main-section-article {
 #main-photo {
   width: 15em;
   border-radius: 50%;
+  margin-left: 5em;
 }
 
 .main-section-article-header {
