@@ -10,13 +10,13 @@
 </head>
 
 <body>
-  <header>
+  <header  id="main-header">
     <a id="header-logo" href="#">DS</a>
     <nav id="navbar">
       <ul>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#projects">projects</a></li>
-    </ul>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#projects">projects</a></li>
+      </ul>
     </nav>
     <ul class="header-links-list">
       <li>
@@ -44,20 +44,24 @@
 
   <main>
     <section id="welcome-section">
-      <header id="welcome-section-header">
-        <h1>Hi, my name is Dmytro Soloviov</h1>
-          <img id="main-photo" src="./img/dmytro.jpeg" alt="photo-dmytro" />
-          <p>I'm a web developer</p>        
-      </header>
-        <p>
-          Until now, I have worked as a lawyer at IT company which is developing a social platform and other services. However, I decided to finally move to the side of developers. Because I believe that code is law.
-        </p>
-        <p>
-          Some years ago, I began to study the principles of the work of the Internet, web and other technologies. It has grown into a hobby, which I turn into my new profession now.
-        </p>
-        <p>
-          Most of my free time I spend studying computer science, algorithms, databases, UI/UX, watching top design sites and apps, improving my practical skills on the layout of websites, trying to develop SPA, PWA and writing code in JavaScript.
-        </p>
+<header id="welcome-section-header">
+      <h1>Hi, my name is Dmytro Soloviov</h1>
+
+      <img id="main-photo" src="./img/dmytro.jpeg" alt="photo-dmytro" />
+
+      <p>I'm a web developer</p>
+</header>
+<main id="welcome-section-main">
+      <p>
+        Until now, I have worked as a lawyer at IT company which is developing a social platform and other services. However, I decided to finally move to the side of developers. Because I believe that code is law.
+      </p>
+      <p>
+        Some years ago, I began to study the principles of the work of the Internet, web and other technologies. It has grown into a hobby, which I turn into my new profession now.
+      </p>
+      <p>
+        Most of my free time I spend studying computer science, algorithms, databases, UI/UX, watching top design sites and apps, improving my practical skills on the layout of websites, trying to develop SPA, PWA and writing code in JavaScript.
+      </p>
+      </main>
     </section>
 
     <section id="skills">
@@ -74,6 +78,12 @@
           </li>
           <li class="main-section-article-list-item">
             understanding of software development lifecycle (web app lifecycle)
+          </li>
+          <li class="main-section-article-list-item">
+            understanding the basic principles of OOP, SOLID principles, functional programming, REST API
+          </li>
+          <li class="main-section-article-list-item">
+            understanding basic principles and trends of web design, material design
           </li>
           <li class="main-section-article-list-item">
             collection and analysis software requirements, writing user stories
@@ -150,38 +160,60 @@
       <article class="main-section-article">
         <h2 class="main-section-article-header">Education</h2>
         <ul class="main-section-article-list">
-          <li class="main-section-article-list-item"></li>
-          <li class="main-section-article-list-item"></li>
-          <li class="main-section-article-list-item"></li>
-          <li class="main-section-article-list-item"></li>
-          <li class="main-section-article-list-item"></li>
+          <li class="main-section-article-list-item">
+            Harvard Course CS50, Prometheus
+          </li>
+          <li class="main-section-article-list-item">
+            Project Management in IT, Lemon School
+          </li>
+          <li class="main-section-article-list-item">
+            JavaScript Tutorial, CSS Tutorial, HTML Fundamentals, Solo Learn
+          </li>
+          <li class="main-section-article-list-item">
+            HTML/CSS/JavaScript Fundamentals, SoftServe
+          </li>
+          <li class="main-section-article-list-item">
+            WebUI, SoftServe
+          </li>
         </ul>
       </article>
-</section>
+    </section>
 
-<section id="projects">
+    <section id="projects">
       <article class="main-section-article">
         <h2 class="main-section-article-header">My projects</h2>
-        <ul class="main-section-article-list">
-          <li class="main-section-article-list-item">
+        <ul class="main-section-article-list" id="project-list">
+          <li class="projects-list-item">
             <h3 class="project-tile">
+              Tribute Page
             </h3>
+            <a class="project-link" href="https://github.com/dimapositiva/free-code-camp/tree/master/responsive-web-design/Tribute%20Page" target="_blank">
+              <img class="project-img" src="./img/tribute-page.png" alt="tribute page project image" />
+            </a>
           </li>
-          <li class="main-section-article-list-item">
+          <li class="projects-list-item">
             <h3 class="project-tile">
+              Survey Form
             </h3>
+            <a class="project-link" href="https://github.com/dimapositiva/free-code-camp/tree/master/responsive-web-design/Survey%20Form" target="_blank">
+              <img class="project-img" src="./img/survey-form.png" alt="survey form project image" />
+            </a>
           </li>
-          <li class="main-section-article-list-item">
+          <li class="projects-list-item">
             <h3 class="project-tile">
+              Product Landing Page
             </h3>
+            <a class="project-link" href="https://github.com/dimapositiva/free-code-camp/tree/master/responsive-web-design/Product%20Landing%20Page" target="_blank">
+              <img class="project-img" src="./img/landing-page.png" alt="landing page project image" />
+            </a>
           </li>
-          <li class="main-section-article-list-item">
+          <li class="projects-list-item">
             <h3 class="project-tile">
+              Tech Documentation Page
             </h3>
-          </li>
-          <li class="main-section-article-list-item">
-            <h3 class="project-tile">
-            </h3>
+            <a class="project-link" href="https://github.com/dimapositiva/free-code-camp/tree/master/responsive-web-design/Product%20Landing%20Page" target="_blank">
+              <img class="project-img" src="./img/tech-documentation-page.png" alt="tech documentation page project image" />
+            </a>
           </li>
         </ul>
       </article>
