@@ -7,11 +7,14 @@ body {
 }
 
 header#main-header {
+  height: 5em;
+  width: 100%;
+  position: fixed;
+  top: 0;
   display: grid;
   grid-template-columns: 20% 50% 30%;
   justify-content: space-between;
   background-color: #f2f2f2;
-  padding: 1em 0 1em 0;
 }
 
 #header-logo {
@@ -51,9 +54,10 @@ main {
 }
 
 #welcome-section {
+  margin-top: 6em;
   height: 100vh;
   display: grid;
-  /* grid-template-columns: 60%; */
+  grid-template-columns: 60%;
   justify-content: center;
   background-color: #fff;
 }
@@ -84,6 +88,12 @@ article.main-section-article {
 .main-section-article-header {
   text-align: center;
 }
+
+#tech-and-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+}
+
 .project-img {
   width: 20em;
 }
@@ -108,4 +118,11 @@ footer {
   background-color: #b3d1ff;
   height: 5em;
   align-items: center;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+
 }
